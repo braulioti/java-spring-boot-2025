@@ -40,3 +40,17 @@
 - ~~Criando o Primeiro Endpoint REST~~
 - ~~Entendendo o .gitignore~~
 - ~~Enviando o Nosso Código para o Github~~
+
+### Entendendo Path Params e o Tratamento de Exceptions no Spring Boot
+- ~~Apresentação da Seção - Entendendo Path Params e o Tratamento de Exceptions~~
+- ~~Entendendo as Annotations @RequestController @RequestMapping @PathVariable~~
+- ~~Definindo a Lógica da nossa API RESTful~~
+- ~~Definindo os Métodos de Validação e Executando a Aplicação~~
+- ~~Tratando Exceções com @ControllerAdvice, @ResponseStatus e @ExceptionHandler~~
+- ~~[DESAFIO] Implemente as Demais Operações Matemáticas~~
+- [SOLUÇÃO] Implemente as Demais Operações Matemáticas
+- ~~[DESAFIO] Refatore o Código da Aplicação Separando os Conceitos~~
+- [SOLUÇÃO] Refatore o Código da Aplicação Separando os Conceitos
+- ~~Como um DEV Proativo Soluciona suas Dúvidas no StackOverFlow~~
+- ~~Como um DEV Proativo Soluciona suas Dúvidas no Google~~
+- ~~Como um DEV Proativo Soluciona suas Dúvidas no ChatGPT~~
