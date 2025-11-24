@@ -23,13 +23,13 @@
 - ~~Boas Práticas~~
 - ~~Simulado 1~~
 
-### Tudo que você precisa saber para começar a codificar
+### Seção 3: Tudo que você precisa saber para começar a codificar
 - ~~Apresentação da Seção - O que Você Precisa Saber para Começar a Codar~~
 - ~~Como Preparar Seu Ambiente de Desenvolvimento: Ferramentas e Configurações~~
 - ~~Como Acessar o Repositório do Curso no Github~~
 - ~~Como Consultar o Código das Aulas~~
 
-### Primeiros passos em Spring Boot 3.4.1 com Java 21
+### Seção 4: Primeiros passos em Spring Boot 3.4.1 com Java 21
 - ~~Apresentação da Seção - Primeiros passos em Spring Boot 3.4.1 com Java 21~~
 - ~~O que é Spring Framework~~
 - ~~O que é Spring Boot~~
@@ -41,16 +41,16 @@
 - ~~Entendendo o .gitignore~~
 - ~~Enviando o Nosso Código para o Github~~
 
-### Entendendo Path Params e o Tratamento de Exceptions no Spring Boot
+### Seção 5: Entendendo Path Params e o Tratamento de Exceptions no Spring Boot
 - ~~Apresentação da Seção - Entendendo Path Params e o Tratamento de Exceptions~~
 - ~~Entendendo as Annotations @RequestController @RequestMapping @PathVariable~~
 - ~~Definindo a Lógica da nossa API RESTful~~
 - ~~Definindo os Métodos de Validação e Executando a Aplicação~~
 - ~~Tratando Exceções com @ControllerAdvice, @ResponseStatus e @ExceptionHandler~~
 - ~~[DESAFIO] Implemente as Demais Operações Matemáticas~~
-- [SOLUÇÃO] Implemente as Demais Operações Matemáticas
+- ~~[SOLUÇÃO] Implemente as Demais Operações Matemáticas~~
 - ~~[DESAFIO] Refatore o Código da Aplicação Separando os Conceitos~~
-- [SOLUÇÃO] Refatore o Código da Aplicação Separando os Conceitos
+- ~~[SOLUÇÃO] Refatore o Código da Aplicação Separando os Conceitos~~
 - ~~Como um DEV Proativo Soluciona suas Dúvidas no StackOverFlow~~
 - ~~Como um DEV Proativo Soluciona suas Dúvidas no Google~~
 - ~~Como um DEV Proativo Soluciona suas Dúvidas no ChatGPT~~
