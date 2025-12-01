@@ -54,3 +54,23 @@
 - ~~Como um DEV Proativo Soluciona suas Dúvidas no StackOverFlow~~
 - ~~Como um DEV Proativo Soluciona suas Dúvidas no Google~~
 - ~~Como um DEV Proativo Soluciona suas Dúvidas no ChatGPT~~
+
+### Seção 6: Como usar os Verbos HTTP no Spring Boot
+- ~~Apresentação da Seção - Como usar os verbos HTTP no Spring Boot~~
+- ~~Injeção de Dependências com @Service e @Autowired~~
+- ~~Retornando Listas de Objetos em JSON~~
+- O Postman e os Verbos HTTP POST, PUT e DELETE
+
+### Seção 40: Configuração de Ambiente de Desenvolvimento no Windows
+- ~~Apresentação da Seção - Configuração do Ambiente no Windows~~
+- ~~Instalando o Java~~
+- ~~Instalando o Maven~~
+- ~~Instalando o IntelliJ IDEA~~
+- ~~Instalando o GIT e GitBash~~
+- ~~Instalando o MySQL~~
+- ~~Instalando o MySQL Workbench~~
+- ~~Instalando o HeidiSQL~~
+- ~~Instalando o Postman~~
+- ~~Instalando o Docker~~
+- ~~Habilitando o Kubernetes no Docker Desktop~~
+- ~~Conclusão da Seção - Configuração do Ambiente Windows~~ 
