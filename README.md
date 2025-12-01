@@ -59,7 +59,7 @@
 - ~~Apresentação da Seção - Como usar os verbos HTTP no Spring Boot~~
 - ~~Injeção de Dependências com @Service e @Autowired~~
 - ~~Retornando Listas de Objetos em JSON~~
-- O Postman e os Verbos HTTP POST, PUT e DELETE
+- ~~O Postman e os Verbos HTTP POST, PUT e DELETE~~
 
 ### Seção 40: Configuração de Ambiente de Desenvolvimento no Windows
 - ~~Apresentação da Seção - Configuração do Ambiente no Windows~~
