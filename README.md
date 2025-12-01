@@ -79,18 +79,51 @@
 - ~~Simulação de Erro e Investigação com Logs~~
 
 ### Seção 9: O Padrão de projetos DTO (Data Transfer Object)
-- Apresentação da Seção - O Padrão de projetos DTO (Data Transfer Object)
-- O Padrão de Projetos DTO (Data Transfer Object)
-- O que é porque usar o Dozer
-- Implementando o Padrão de Projetos DTO
-- Adicionando os Testes do Mapper de Entidade e DTO
-- Ajustando o Service e o Controller
+- ~~Apresentação da Seção - O Padrão de projetos DTO (Data Transfer Object)~~
+- ~~O Padrão de Projetos DTO (Data Transfer Object)~~
+- ~~O que é porque usar o Dozer~~
+- ~~Implementando o Padrão de Projetos DTO~~
+- ~~Adicionando os Testes do Mapper de Entidade e DTO~~
+- ~~Ajustando o Service e o Controller~~
 
 ### Seção 10: Versionamento de API's
 - Apresentação da Seção - Versionamento de API's
 - Versionamento de API's
 - Criando um Mapper Customizado
 - Testando as Diferentes Versões do Endpoint
+
+### Seção 11: Adicionando Suporte à Migrations com Flyway
+- Apresentação da Seção - Adicionando Suporte à Migrations com Flyway
+- O que são Migrations
+- Migrations com Flyway
+- Lidando com um Problema Clássico ao Trabalharmos com FlyWay
+- Migrations com Flyway via Terminal e Plugin no POM
+
+### Seção 12: Custom JSON Serialization
+- Apresentação da Seção - Custom JSON Serialization
+- Custom JSON Serialization
+- Trabalhando com Formatação de Datas e Tipos Personalizados
+- Ignorando Propriedades Condicionalmente
+
+### Seção 13: Content Negotiation
+- Apresentação da Seção - Content Negotiation
+- O que é Content Negotiation
+- Implementando Content Negotiation via QUERY Parameter
+- Content Negotiation via HEADER Parameter
+- Serializando em YML (YAML Ain't Markup Language)
+- Testando a Implementação de Content Negotiation com JSON, XML e YAML
+
+### Seção 14: Implementando HATEOAS
+- Apresentação da Seção - Implementando HATEOAS
+- O que é HATEOAS (Hypermedia as the Engine of Application State)
+- Como Implementar HATEOAS com Spring Boot
+- Implementando Links HATEOAS para todos os Verbos (GET, POST, PUT e DELETE)
+- Adicionando Suporte à HATEOAS às Demais Operações
+- Conhecendo o Mockito
+- Testando a Geração dos Links HATEOAS no Serviço com Mockito e JUnit 5
+- Testando os Métodos de Create, Update e Delete com Mockito e JUnit 5
+- Testando o Lançamento de Exceptions nas Funções de Create e Update
+- Testando o Método FindAll com Mockito e JUnit 5
 
 ### Seção 40: Configuração de Ambiente de Desenvolvimento no Windows
 - ~~Apresentação da Seção - Configuração do Ambiente no Windows~~
