@@ -61,6 +61,31 @@
 - ~~Retornando Listas de Objetos em JSON~~
 - ~~O Postman e os Verbos HTTP POST, PUT e DELETE~~
 
+### Seção 7: Spring Data JPA e Integração da API ao MySQL
+- ~~Apresentação da Seção - Integrando a nossa API ao MySQL~~
+- ~~Spring Data JPA - Simplifcando o Acesso a Dados em Apps Spring Framework~~
+- ~~Criando a Base de Dados e Definindo as Propriedades de Conexão~~ 
+- ~~Implementando a Entidade Person e o Repositório~~
+- ~~Substituindo os Mocks do Service pelo Acesso ao Repositório~~
+- ~~Executando a Aplicação e Testando os Endpoints~~
+- ~~Refactoring do Controller de Pessoas~~
+
+### Seção 8: Trabalhando com Logs no Spring Boot
+- Apresentação da Seção - Trabalhando com Logs no Spring Boot
+- O que são logs e qual a sua importância
+- A ferramenta de Log Padrão do Spring Boot
+- Como Configurar Logs em um Pacote
+- Mudando o Nível de Log Globalmente
+- Simulação de Erro e Investigação com Logs
+
+### Seção 9: O Padrão de projetos DTO (Data Transfer Object)
+- Apresentação da Seção - O Padrão de projetos DTO (Data Transfer Object)
+- O Padrão de Projetos DTO (Data Transfer Object)
+- O que é porque usar o Dozer
+- Implementando o Padrão de Projetos DTO
+- Adicionando os Testes do Mapper de Entidade e DTO
+- Ajustando o Service e o Controller
+
 ### Seção 40: Configuração de Ambiente de Desenvolvimento no Windows
 - ~~Apresentação da Seção - Configuração do Ambiente no Windows~~
 - ~~Instalando o Java~~
@@ -74,3 +99,18 @@
 - ~~Instalando o Docker~~
 - ~~Habilitando o Kubernetes no Docker Desktop~~
 - ~~Conclusão da Seção - Configuração do Ambiente Windows~~ 
+
+### Seção 41 - Configuração do Ambiente de Desenvolvimento no Linux
+- ~~Apresentação da Seção - Configuração do Ambiente no Linux~~
+- ~~Instalando o Java~~
+- ~~Instalando o Maven~~
+- ~~Instalando o IntelliJ IDEA~~
+- ~~Instalando o MySQL~~
+- ~~Instalando o MySQL Workbench~~
+- ~~Criando a Base de Dados~~
+- ~~Instalando o Postman~~
+- ~~Instalando o Docker~~
+- ~~Instalando o Docker Compose~~
+- ~~Instalando o GIT~~
+- ~~Habilitando o Kubernetes - K8s (Minikube)~~
+- ~~Conclusão da Seção - Configuração do Ambiente Linux~~ 
