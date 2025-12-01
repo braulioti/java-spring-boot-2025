@@ -125,6 +125,13 @@
 - Testando o Lançamento de Exceptions nas Funções de Create e Update
 - Testando o Método FindAll com Mockito e JUnit 5
 
+### Seção 39: [EXTRA] Arquétipos Maven Indo Muito Além da Gestão de Dependências
+- ~~Apresentação da Seção - Arquétipos Maven Indo Muito Além da Gestão de Dependências~~
+- ~~Criando um Arquétipo Maven (Maven Archetype)~~
+- ~~Criando um novo Projeto a partir de um Arquétipo Maven (Maven Archetype)~~
+- ~~Criando um Repositório GIT para o nosso Arquétipo Maven (Maven Archetype)~~
+- ~~Enviando o Código do Arquétipo Maven (Maven Archetype) para o Github~~
+
 ### Seção 40: Configuração de Ambiente de Desenvolvimento no Windows
 - ~~Apresentação da Seção - Configuração do Ambiente no Windows~~
 - ~~Instalando o Java~~
