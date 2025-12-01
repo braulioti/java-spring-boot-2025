@@ -71,12 +71,12 @@
 - ~~Refactoring do Controller de Pessoas~~
 
 ### Seção 8: Trabalhando com Logs no Spring Boot
-- Apresentação da Seção - Trabalhando com Logs no Spring Boot
-- O que são logs e qual a sua importância
-- A ferramenta de Log Padrão do Spring Boot
-- Como Configurar Logs em um Pacote
-- Mudando o Nível de Log Globalmente
-- Simulação de Erro e Investigação com Logs
+- ~~Apresentação da Seção - Trabalhando com Logs no Spring Boot~~
+- ~~O que são logs e qual a sua importância~~
+- ~~A ferramenta de Log Padrão do Spring Boot~~
+- ~~Como Configurar Logs em um Pacote~~
+- ~~Mudando o Nível de Log Globalmente~~
+- ~~Simulação de Erro e Investigação com Logs~~
 
 ### Seção 9: O Padrão de projetos DTO (Data Transfer Object)
 - Apresentação da Seção - O Padrão de projetos DTO (Data Transfer Object)
@@ -85,6 +85,12 @@
 - Implementando o Padrão de Projetos DTO
 - Adicionando os Testes do Mapper de Entidade e DTO
 - Ajustando o Service e o Controller
+
+### Seção 10: Versionamento de API's
+- Apresentação da Seção - Versionamento de API's
+- Versionamento de API's
+- Criando um Mapper Customizado
+- Testando as Diferentes Versões do Endpoint
 
 ### Seção 40: Configuração de Ambiente de Desenvolvimento no Windows
 - ~~Apresentação da Seção - Configuração do Ambiente no Windows~~
@@ -114,3 +120,36 @@
 - ~~Instalando o GIT~~
 - ~~Habilitando o Kubernetes - K8s (Minikube)~~
 - ~~Conclusão da Seção - Configuração do Ambiente Linux~~ 
+
+### Seção 42 - Minicurso de GIT e GitHub
+- ~~Apresentação da Seção - Minicurso de GIT e GitHub~~
+- ~~O que são GIT e GitHub?~~
+- ~~Criando o Repositório do GitHub~~
+- ~~Clonando um Repositório do GitHub~~
+- ~~O que é Markdown~~
+- ~~Entendendo o Arquivo .gitignore~~
+- ~~Baixando o Código do Repositório 'git pull'~~
+- ~~Conhecendo os Comandos 'git add', 'git commit' e 'git amend'~~
+- ~~Enviando o Código par o GitHub 'git push'~~
+- ~~Lidando com Merges e Conflitos~~
+- ~~Criando Novas Branchs~~
+- ~~Mudando de Branchs~~
+
+### Seção 43 - Conclusão
+- Conclusão
+
+### Seção 44 - FAQ Dúvidas mais comuns
+- ~~Porque Minhas Migrations Pararam de Funcionar?~~
+- ~~Meu Código é Igualzinho ao do Curso, mas Não Funciona~~
+- ~~Como Acessar a Minha Máquina na Amazon AWS via SSH~~
+- ~~Porque não Consigo me Conectar a Minha Máquina na Amazon AWS~~
+- ~~Porque o JSON Retornado não Formata com o das Aulas?~~
+- ~~O Docker está com Problemas Estranhos e não se Comporta como o Esperado~~
+- ~~Como acessar o Código de Outras Branchs?~~
+- ~~Como o ChatGPT pode te Ajudar a Resolver Bugs?~~
+- ~~Como Mudar a Versão da JRE Padrão da IDE por uma Mais Atual?~~
+- ~~Como Resolver 'You've Reached your Usage Limit - See your Usage Dashboard~~
+- ~~Porque o ChatGPT está Demorando Muito a Responder ou Nunca Responde?~~
+- ~~Como não Consumir o Limite de Tokens do ChatGPT de uma vez só?~~
+- ~~O Spring Tool Suite(Eclipse) está Setando uma Versão Inferior do Java~~
+- ~~Como Resolver o Erro 'Port 8080 Already in Use' Porta em Uso?~~
