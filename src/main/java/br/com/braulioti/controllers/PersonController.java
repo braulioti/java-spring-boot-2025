@@ -1,6 +1,7 @@
 package br.com.braulioti.controllers;
 
-import br.com.braulioti.data.dto.PersonDTO;
+import br.com.braulioti.data.dto.v1.PersonDTO;
+import br.com.braulioti.data.dto.v2.PersonDTOV2;
 import br.com.braulioti.services.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -30,6 +31,14 @@ public class PersonController {
     )
     public PersonDTO create(@RequestBody PersonDTO person) {
         return service.create(person);
+    }
+
+    @PostMapping(value = "/v2",
+            produces = MediaType.APPLICATION_JSON_VALUE,
+            consumes = MediaType.APPLICATION_JSON_VALUE
+    )
+    public PersonDTOV2 create(@RequestBody PersonDTOV2 person) {
+        return service.createV2(person);
     }
 
     @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE,

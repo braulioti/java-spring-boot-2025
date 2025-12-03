@@ -1,8 +1,10 @@
 package br.com.braulioti.services;
 
 import br.com.braulioti.controllers.PersonController;
-import br.com.braulioti.data.dto.PersonDTO;
+import br.com.braulioti.data.dto.v1.PersonDTO;
+import br.com.braulioti.data.dto.v2.PersonDTOV2;
 import br.com.braulioti.exception.ResourceNotFoundException;
+import br.com.braulioti.mapper.custom.PersonMapper;
 import br.com.braulioti.model.Person;
 import br.com.braulioti.repositoriy.PersonRepository;
 import org.slf4j.Logger;
@@ -23,6 +25,8 @@ public class PersonService {
 
     @Autowired
     private PersonRepository repository;
+    @Autowired
+    private PersonMapper converter;
 
 
     public List<PersonDTO> findAll() {
@@ -45,6 +49,14 @@ public class PersonService {
         var entity = parseObject(person, Person.class);
 
         return parseObject(repository.save(entity), PersonDTO.class);
+    }
+
+    public PersonDTOV2 createV2(PersonDTOV2 person) {
+        logger.info("Creating one Person V2!");
+
+        var entity = converter.converDTOToEntity(person);
+
+        return converter.converEntityToDTO(repository.save(entity));
     }
 
     public PersonDTO update(PersonDTO person) {

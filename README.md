@@ -87,10 +87,10 @@
 - ~~Ajustando o Service e o Controller~~
 
 ### Seção 10: Versionamento de API's
-- Apresentação da Seção - Versionamento de API's
-- Versionamento de API's
-- Criando um Mapper Customizado
-- Testando as Diferentes Versões do Endpoint
+- ~~Apresentação da Seção - Versionamento de API's~~
+- ~~Versionamento de API's~~
+- ~~Criando um Mapper Customizado~~
+- ~~Testando as Diferentes Versões do Endpoint~~
 
 ### Seção 11: Adicionando Suporte à Migrations com Flyway
 - Apresentação da Seção - Adicionando Suporte à Migrations com Flyway
@@ -124,6 +124,26 @@
 - Testando os Métodos de Create, Update e Delete com Mockito e JUnit 5
 - Testando o Lançamento de Exceptions nas Funções de Create e Update
 - Testando o Método FindAll com Mockito e JUnit 5
+
+### Seção 15: Adicionando o Suporte ao Swagger (Open API)
+- Apresentação da Seção: Adicionando o Suporte ao Swagger (Open API)
+- O que é o Swagger e a Open API?
+- Definindo a Configuração Básica do Swagger (Open API)
+- Customizando a Documentação do Swagger (Open API)
+- Movendo a Documentação do Swagger OpenAPI para uma Interface
+- [DESAFIO] Crie um Novo Endpoint de Books
+- [SOLUÇÃO] Criando um Novo Endpoint de Books
+- [DESAFIO] Crie Testes Unitários com Mockito para Validar os Links HATEOAS
+- [SOLUCAO] Crie Testes Unitários com Mockito para Validar os Links HATEOAS
+
+### Seção 38: [EXTRA] Conectando-se à Outros Bancos de Dados
+- ~~Apresentação da Seção - Conectando-se à Outros Bancos de Dados~~
+- ~~Conhecendo o sqlines.com~~
+- ~~Iniciando uma Instância do PostgreSQL no Docker e Criando o Banco de Dados~~
+- ~~Ajustando o projeto para Conectarmos ao PostgreSQL~~
+- ~~Iniciando uma Instância do SQL Server no Docker e Crindo o Banco de Dados~~
+- ~~Ajustando o Projeto para nos Conectarmos ao SQL Server~~
+- ~~Conclusão da Seção - Conectando-se à Outros Bancos de Dados~~
 
 ### Seção 39: [EXTRA] Arquétipos Maven Indo Muito Além da Gestão de Dependências
 - ~~Apresentação da Seção - Arquétipos Maven Indo Muito Além da Gestão de Dependências~~
