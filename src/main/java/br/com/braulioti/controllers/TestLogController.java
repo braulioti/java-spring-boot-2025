@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestLogController {
     private final Logger logger = LoggerFactory.getLogger(PersonController.class.getName());
 
-    @GetMapping("/test")
+    @GetMapping("/api/test/v1")
     public String testLog() {
         logger.debug("This is an DEBUG log");
         logger.info("This is an INFO log");

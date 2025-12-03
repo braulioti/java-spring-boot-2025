@@ -106,12 +106,12 @@
 - ~~Ignorando Propriedades Condicionalmente~~
 
 ### Seção 13: Content Negotiation
-- Apresentação da Seção - Content Negotiation
-- O que é Content Negotiation
-- Implementando Content Negotiation via QUERY Parameter
-- Content Negotiation via HEADER Parameter
-- Serializando em YML (YAML Ain't Markup Language)
-- Testando a Implementação de Content Negotiation com JSON, XML e YAML
+- ~~Apresentação da Seção - Content Negotiation~~
+- ~~O que é Content Negotiation~~
+- ~~Implementando Content Negotiation via QUERY Parameter~~
+- ~~Content Negotiation via HEADER Parameter~~
+- ~~Serializando em YML (YAML Ain't Markup Language)~~
+- ~~Testando a Implementação de Content Negotiation com JSON, XML e YAML~~
 
 ### Seção 14: Implementando HATEOAS
 - Apresentação da Seção - Implementando HATEOAS
@@ -166,6 +166,20 @@
 - Habilitando CORS de Forma Global
 - Criando um Teste de Integração para Validar a Aplicação CORS
 - Testando a Aplicação de CORS com Diferentes Origins
+
+### Seção 19: O verbo PATCH
+- Apresentação da Seção - O Verbo PATCH
+- Quando e Porque usar o Verbo PATCH
+- Trabalhando com o Verbo PATCH
+- Finalizando a Implementação e Testando no Postman
+- Automatizando os Testes das Operações de Create e Update com JSON
+- Automatizando os Testes das Operações de Disable e Delete com JSON
+- Automatizando os Testes das Operações de findAll com JSON
+- [DESAFIO] Automatizar os Testes das Operações com XML
+- [SOLUÇÃO] Automatizar os Testes das Operações com XML
+- [DESAFIO] Automatizar os Testes das Operações com YAML
+- [SOLUÇÃO] Automatizar os Testes das Operações com YAML - Criando Mapper
+- [SOLUÇÃO] Finalizando os Testes de Integração com YAML
 
 ### Seção 37: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros
 - ~~Apresentação da Seção - Consumindo uma API de Terceiros com ChatGPT~~
@@ -244,7 +258,7 @@
 - ~~Mudando de Branchs~~
 
 ### Seção 43 - Conclusão
-- Conclusão
+- ~~Conclusão~~
 
 ### Seção 44 - FAQ Dúvidas mais comuns
 - ~~Porque Minhas Migrations Pararam de Funcionar?~~
@@ -261,3 +275,19 @@
 - ~~Como não Consumir o Limite de Tokens do ChatGPT de uma vez só?~~
 - ~~O Spring Tool Suite(Eclipse) está Setando uma Versão Inferior do Java~~
 - ~~Como Resolver o Erro 'Port 8080 Already in Use' Porta em Uso?~~
+
+### Seção 45 [VERSÃO LEGADA - Spring Boot 3.3.x] - [EXTRA] Hacks e Atalhos de Produtividade
+- ~~Apresentação da Seção - Hacks e Atalhos de Produtividade~~
+- ~~Substituindo o application.properties por application.yml~~
+- ~~Criando um Arquétipo Maven (Maven Archetype)~~
+- ~~Criando um Novo Projeto a Partir de um Arquétipo Maven (Maven Archetype)~~
+- ~~Criando um Repositório para o nosso Arquétipo Maven (Maven Archetype)~~
+- ~~Conclusão da Seção - Hacks e Atalhos de Produtividade~~
+
+### Seção 46 [VERSÃO LEGADA - Spring Boot 3.3.x] - [EXTRA] Migrando para o Java 15 e Spring Boot 2.4.1
+- ~~Apresentação da Seção - Migrando para o Java 15 e Spring Boot 2.4.1~~
+- ~~Iniciando o Processo de Migração~~
+- ~~Ajustando a Implentação de HATEOAS~~
+- ~~Substituindo o Swagger pelo Spring Doc Open API~~
+- ~~Importando API-Docs no Postman e Testando Endpoints~~
+- ~~Conclusão da Seção - Migrando para o Java 15 e Spring Boot 2.4.1~~
