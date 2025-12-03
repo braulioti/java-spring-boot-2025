@@ -93,11 +93,11 @@
 - ~~Testando as Diferentes Versões do Endpoint~~
 
 ### Seção 11: Adicionando Suporte à Migrations com Flyway
-- Apresentação da Seção - Adicionando Suporte à Migrations com Flyway
-- O que são Migrations
-- Migrations com Flyway
-- Lidando com um Problema Clássico ao Trabalharmos com FlyWay
-- Migrations com Flyway via Terminal e Plugin no POM
+- ~~Apresentação da Seção - Adicionando Suporte à Migrations com Flyway~~
+- ~~O que são Migrations~~
+- ~~Migrations com Flyway~~
+- ~~Lidando com um Problema Clássico ao Trabalharmos com FlyWay~~
+- ~~Migrations com Flyway via Terminal e Plugin no POM~~
 
 ### Seção 12: Custom JSON Serialization
 - Apresentação da Seção - Custom JSON Serialization
@@ -135,6 +135,29 @@
 - [SOLUÇÃO] Criando um Novo Endpoint de Books
 - [DESAFIO] Crie Testes Unitários com Mockito para Validar os Links HATEOAS
 - [SOLUCAO] Crie Testes Unitários com Mockito para Validar os Links HATEOAS
+
+### Seção 16: Introdução a Conteinerização com Docker
+- Apresentação de Seção: Introdução a Conteinerização com Docker
+- Introdução ao Docker - Compreendendo os Conceitos Fundamentais
+- Executando Nosso Primeiro Container
+- Noção Básica de Dockerfile
+- Dockerizando uma Aplicação Spring Boot
+- Construindo Nosso Próprio Container
+- Subindo um Container Docker a Partir de um Docker Image que Criamos
+- Entendendo os Conceitos de Docker Image e Containers Docker
+- Gerenciando Docker Images e Containers Docker
+- Entendendo a Arquitetura Docker (Docker Client e Docker Engine)
+- Gerenciando os Docker Images
+- Gerenciando os Containers Docker
+- Docker Commands - stats, system
+
+### Seção 17: Testes de Integração com TestContainers e REST Assured
+- Apresentação da Seção - Testes de Integração
+- Conhecendo as Ferramentas de Testes de Integração e Adicionando-as ao Projeto
+- Adicionando as Dependências do TestContainers e do REST-Assured ao Projeto
+- Preparando a Infraestrutura de Testes com Testcontainers
+- Testando a Geração da Página do Swagger UI c. Testcontainers e Rest Assured
+- Importando o Swagger Api-Docs da nossa API no Postman
 
 ### Seção 38: [EXTRA] Conectando-se à Outros Bancos de Dados
 - ~~Apresentação da Seção - Conectando-se à Outros Bancos de Dados~~
