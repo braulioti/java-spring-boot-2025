@@ -100,10 +100,10 @@
 - ~~Migrations com Flyway via Terminal e Plugin no POM~~
 
 ### Seção 12: Custom JSON Serialization
-- Apresentação da Seção - Custom JSON Serialization
-- Custom JSON Serialization
-- Trabalhando com Formatação de Datas e Tipos Personalizados
-- Ignorando Propriedades Condicionalmente
+- ~~Apresentação da Seção - Custom JSON Serialization~~
+- ~~Custom JSON Serialization~~
+- ~~Trabalhando com Formatação de Datas e Tipos Personalizados~~
+- ~~Ignorando Propriedades Condicionalmente~~
 
 ### Seção 13: Content Negotiation
 - Apresentação da Seção - Content Negotiation
@@ -158,6 +158,31 @@
 - Preparando a Infraestrutura de Testes com Testcontainers
 - Testando a Geração da Página do Swagger UI c. Testcontainers e Rest Assured
 - Importando o Swagger Api-Docs da nossa API no Postman
+
+### Seção 18: Configurando Cross-Origin Resource Sharing (CORS)
+- Apresentação da Seção - Configurando o Cross-Origin Resource Sharing (CORS)
+- O que é o Cross-Origin Resource Sharing (CORS)
+- Como Habilitar o CORS no Spring Boot
+- Habilitando CORS de Forma Global
+- Criando um Teste de Integração para Validar a Aplicação CORS
+- Testando a Aplicação de CORS com Diferentes Origins
+
+### Seção 37: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros
+- ~~Apresentação da Seção - Consumindo uma API de Terceiros com ChatGPT~~
+- ~~O que é o ChatGPT?~~
+- ~~Conhecendo a API do ChatGPT~~
+- ~~Criando uma API Key para Consumir a API do ChatGPT~~
+- ~~Consumindo a API do ChatGPT no Postman~~
+- ~~Criando uma Aplicação para Consumir a API do ChatGPT~~
+- ~~Criando as Classes de Configuração para Consumir a API do ChatGPT~~
+- ~~Conhecendo o RestTemplate~~
+- ~~Criando o Bean do RestTemplate para Consumir a API do ChatGPT~~
+- ~~Criando uma Variável de Ambiente para Armazenar a Secret do ChatGPT~~
+- ~~Criando os VO's que Representam os Objetos de Request ao ChatGPT~~
+- ~~Criando os VO's que Representam os Objetos de Response ao ChatGPT~~
+- ~~Criando o Serviço Responsável por Consumir a API do ChatGPT~~
+- ~~Criando o Controller Responsável por Permitir o Consumo da API do ChatGPT~~
+- ~~Executando a Aplicação e Testando no Postman~~
 
 ### Seção 38: [EXTRA] Conectando-se à Outros Bancos de Dados
 - ~~Apresentação da Seção - Conectando-se à Outros Bancos de Dados~~

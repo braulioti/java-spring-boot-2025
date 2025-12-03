@@ -8,10 +8,11 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/person/v1")
+@RequestMapping("/person")
 public class PersonController {
     @Autowired
     private PersonService service;
@@ -23,7 +24,14 @@ public class PersonController {
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public PersonDTO findById(@PathVariable("id") Long id) {
-        return service.findById(id);
+        var person = service.findById(id);
+        person.setBirthDate(new Date());
+        // person.setPhoneNumber("+55 (99) 98765-4321");
+        person.setPhoneNumber("");
+        person.setLastName(null);
+        person.setSensitiveData("Foo Bar");
+
+        return person;
     }
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE,
