@@ -20,7 +20,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @Service
 public class PersonService {
-    private final Logger logger = LoggerFactory.getLogger(PersonController.class.getName());
+    private final Logger logger = LoggerFactory.getLogger(PersonService.class.getName());
 
     @Autowired
     private PersonRepository repository;

@@ -126,15 +126,15 @@
 - ~~Testando o Método FindAll com Mockito e JUnit 5~~
 
 ### Seção 15: Adicionando o Suporte ao Swagger (Open API)
-- Apresentação da Seção: Adicionando o Suporte ao Swagger (Open API)
-- O que é o Swagger e a Open API?
-- Definindo a Configuração Básica do Swagger (Open API)
-- Customizando a Documentação do Swagger (Open API)
-- Movendo a Documentação do Swagger OpenAPI para uma Interface
-- [DESAFIO] Crie um Novo Endpoint de Books
-- [SOLUÇÃO] Criando um Novo Endpoint de Books
-- [DESAFIO] Crie Testes Unitários com Mockito para Validar os Links HATEOAS
-- [SOLUCAO] Crie Testes Unitários com Mockito para Validar os Links HATEOAS
+- ~~Apresentação da Seção: Adicionando o Suporte ao Swagger (Open API)~~
+- ~~O que é o Swagger e a Open API?~~
+- ~~Definindo a Configuração Básica do Swagger (Open API)~~
+- ~~Customizando a Documentação do Swagger (Open API)~~
+- ~~Movendo a Documentação do Swagger OpenAPI para uma Interface~~
+- ~~[DESAFIO] Crie um Novo Endpoint de Books~~
+- ~~[SOLUÇÃO] Criando um Novo Endpoint de Books~~
+- ~~[DESAFIO] Crie Testes Unitários com Mockito para Validar os Links HATEOAS~~
+- ~~[SOLUCAO] Crie Testes Unitários com Mockito para Validar os Links HATEOAS~~
 
 ### Seção 16: Introdução a Conteinerização com Docker
 - Apresentação de Seção: Introdução a Conteinerização com Docker
@@ -204,6 +204,27 @@
 - Implementando o Download de Vários Arquivos Simultaneamente
 - Preparando o Serviço para Prover Downloads
 - Implementando o Download de Arquivos
+
+### Seção 22: Importação e Exportação de Planilhas Excel e CSV
+- Apresentação da Seção - Importação e Exportação de Planilhas Excel e CSV
+- Entendendo o Problema e Criando as Planilhas de Teste do Projeto
+- Adicionando as Dependências Maven para Trabalhar com CSV e XLSX ao Projeto
+- Criando a Factory de Importação - FileImporterFactory em Ação
+- Implementando o Importador de CSV - Transformando Dados em Objetos
+- Implementando o Importador de XLSX - Lendo Planilhas Excel
+- HATEOAS e HAL, Otimizando a Geração de Links no Service
+- Implementando o Serviço - Integração e Funcionalidades Avançadas
+- Explorando Padrões de Projeto - Factory e Strategy na Pratica
+- Documentando o novo Endpoint da API - RESTful com Swagger
+- Finalizando a Implementação e Integrando o Controller ao Service
+- Testando o nosso novo Endpoint no Postman
+- Criando a Factory Responsável pela Exportação de XLSX e CSV
+- Implementando o Exportador de CSV
+- Implementando o Exportador de XLSX
+- Integrando o Serviço à Factory para Exportar os Dados
+- Documentando o novo Endpoint no Swagger
+- Integrando o Controller ao Service
+- Validando Funcionalidades no Postman
 
 ### Seção 37: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros
 - ~~Apresentação da Seção - Consumindo uma API de Terceiros com ChatGPT~~
