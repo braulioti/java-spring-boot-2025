@@ -1,6 +1,6 @@
 package br.com.braulioti.unittests.mapper.mocks;
 
-import br.com.braulioti.data.dto.v1.PersonDTO;
+import br.com.braulioti.data.dto.PersonDTO;
 import br.com.braulioti.model.Person;
 
 import java.util.ArrayList;

@@ -114,16 +114,16 @@
 - ~~Testando a Implementação de Content Negotiation com JSON, XML e YAML~~
 
 ### Seção 14: Implementando HATEOAS
-- Apresentação da Seção - Implementando HATEOAS
-- O que é HATEOAS (Hypermedia as the Engine of Application State)
-- Como Implementar HATEOAS com Spring Boot
-- Implementando Links HATEOAS para todos os Verbos (GET, POST, PUT e DELETE)
-- Adicionando Suporte à HATEOAS às Demais Operações
-- Conhecendo o Mockito
-- Testando a Geração dos Links HATEOAS no Serviço com Mockito e JUnit 5
-- Testando os Métodos de Create, Update e Delete com Mockito e JUnit 5
-- Testando o Lançamento de Exceptions nas Funções de Create e Update
-- Testando o Método FindAll com Mockito e JUnit 5
+- ~~Apresentação da Seção - Implementando HATEOAS~~
+- ~~O que é HATEOAS (Hypermedia as the Engine of Application State)~~
+- ~~Como Implementar HATEOAS com Spring Boot~~
+- ~~Implementando Links HATEOAS para todos os Verbos (GET, POST, PUT e DELETE)~~
+- ~~Adicionando Suporte à HATEOAS às Demais Operações~~
+- ~~Conhecendo o Mockito~~
+- ~~Testando a Geração dos Links HATEOAS no Serviço com Mockito e JUnit 5~~
+- ~~Testando os Métodos de Create, Update e Delete com Mockito e JUnit 5~~
+- ~~Testando o Lançamento de Exceptions nas Funções de Create e Update~~
+- ~~Testando o Método FindAll com Mockito e JUnit 5~~
 
 ### Seção 15: Adicionando o Suporte ao Swagger (Open API)
 - Apresentação da Seção: Adicionando o Suporte ao Swagger (Open API)
@@ -180,6 +180,30 @@
 - [DESAFIO] Automatizar os Testes das Operações com YAML
 - [SOLUÇÃO] Automatizar os Testes das Operações com YAML - Criando Mapper
 - [SOLUÇÃO] Finalizando os Testes de Integração com YAML
+
+### Seção 20: Query Params e Busca Paginada
+- Apresentação da Seção - Query Params e Busca Paginada
+- Busca paginada, Mockaroo e Query Params
+- Implementando Paginação com Pageable e Query Params
+- Implementando Ordenação com Direction
+- O que é HAL e como ele complementa HATEOAS
+- Implementando HAL com PagedModel
+- Entendendo os conceitos de HAL no JSON Retornado
+- [DESAFIO] Implemente Paginação e HAL na Operação de FindAll Books
+- Implementando o Teste de Integração da Operação FindByName
+- [DESAFIO] Implementar os Testes de Integração para FindByName com UML e XML
+- Aprendendo a Testar os Repositórios
+
+### Seção 21: Upload e Download de Arquivos
+- Apresentação da Seção - Upload e Download de Arquivos
+- Definindo as Configurações de Upload e Download
+- Definindo as Exceptions e o DTO de Response
+- Criando o Serviço Responsável por Armazenar o Arquivo em Disco
+- Criando a Interface e o Controller Responsáveis pelo Upload e Download
+- Estruturando o Controller Responsável Pelo Upload e Download de Arquivos
+- Implementando o Download de Vários Arquivos Simultaneamente
+- Preparando o Serviço para Prover Downloads
+- Implementando o Download de Arquivos
 
 ### Seção 37: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros
 - ~~Apresentação da Seção - Consumindo uma API de Terceiros com ChatGPT~~
