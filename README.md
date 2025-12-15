@@ -137,19 +137,23 @@
 - ~~[SOLUCAO] Crie Testes Unitários com Mockito para Validar os Links HATEOAS~~
 
 ### Seção 16: Introdução a Conteinerização com Docker
-- Apresentação de Seção: Introdução a Conteinerização com Docker
-- Introdução ao Docker - Compreendendo os Conceitos Fundamentais
-- Executando Nosso Primeiro Container
-- Noção Básica de Dockerfile
-- Dockerizando uma Aplicação Spring Boot
-- Construindo Nosso Próprio Container
-- Subindo um Container Docker a Partir de um Docker Image que Criamos
-- Entendendo os Conceitos de Docker Image e Containers Docker
-- Gerenciando Docker Images e Containers Docker
-- Entendendo a Arquitetura Docker (Docker Client e Docker Engine)
-- Gerenciando os Docker Images
-- Gerenciando os Containers Docker
-- Docker Commands - stats, system
+- ~~Apresentação de Seção: Introdução a Conteinerização com Docker~~
+- ~~Introdução ao Docker - Compreendendo os Conceitos Fundamentais~~
+- ~~Executando Nosso Primeiro Container~~
+- ~~Noção Básica de Dockerfile~~
+- ~~Dockerizando uma Aplicação Spring Boot~~
+- ~~Construindo Nosso Próprio Container~~
+- ~~Subindo um Container Docker a Partir de um Docker Image que Criamos~~
+- ~~Entendendo os Conceitos de Registry, Repository e Tag~~
+- ~~Criando uma Conta no DockerHub~~
+- ~~Enviando a Nossa Docker Image para o Docker Hub~~
+- ~~Dockerfiles x Docker Images x Containers Docker~~
+- ~~Entendendo os Conceitos de Docker Image e Containers Docker~~
+- ~~Gerenciando Docker Images e Containers Docker~~
+- ~~Entendendo a Arquitetura Docker (Docker Client e Docker Engine)~~
+- ~~Gerenciando os Docker Images~~
+- ~~Gerenciando os Containers Docker~~
+- ~~Docker Commands - stats, system~~
 
 ### Seção 17: Testes de Integração com TestContainers e REST Assured
 - Apresentação da Seção - Testes de Integração
@@ -225,6 +229,39 @@
 - Documentando o novo Endpoint no Swagger
 - Integrando o Controller ao Service
 - Validando Funcionalidades no Postman
+
+### Seção 23: Gerando Relatórios Profissionais com JasperReports e Spring Boot
+- Apresentação da Seção - Gerando Relatórios Profissionais com JasperReports e Spring Boot
+- JasperReports, Jasper Soft Studicio e como eles Primitem criar Relatórios
+- Instalando o JasperSoft Studio Community Edition
+- Criando um Data Adapter para o MySQL
+- Criando o nosso Primeiro Relatório no Jaspersoft Studio
+- Conhecendo o Layout Padrão dos Relatórios no Jaspersoft Studio
+- Montando o Layout do Relatório no Jaspersoft Studio
+- Adicionando o Logo Corporativo, Número de Páginas e Data de Geração do Relatório
+- Relatórios Zebrados com Jasper Reports
+- Adicionando as Dependências Maven do JasperReport
+- Ajustando nossa API RESTful para Suportar Exportação para mais um Formato
+- Implementando o PdfExporter com JasperSoft e JasperReports
+- Validando os Relatórios com JasperReport e iReport no Postman
+- Adicionando Novas Migrations ao Projeto
+- Mapeando os novos Atributos nas Entidades e VOs
+- Implementando o Mapeamento Many to Many entre Person e Books
+- Adicionando as Dependências Maven para Gerar QR Codes
+- Criando o Template do Relatório Principal
+- Parametrizando o Relatório e Adicionando Foto e QRCode
+- Terminando de Definir o Layout do Relatório Principal
+- Criando o Subrelatório com Jaspersoft Studio (iReport)
+- Definindo o Layout do Subrelatório no Jaspersoft Studio (iReport)
+- Zebrando o Subrelatório no Jaspersoft Studio (iReport)
+- Adicionando o Relatório do Jaspersoft Studio (iReport) à nossa API RESTful
+- Ajustando o Exporter de PDF para Gerar Relatórios com JasperSoft (iReport)
+- Criando o Serviço Responsável por Gerar QRCodes
+- Ajustando a Documentação Swagger do Controller
+- Ajustando o Controller para Gerar Relatórios com JasperSoft (iReport)
+- Ajustando o Datasource JRXML no JasperSoft Studio (iReport)
+- Refatorando os Exporters
+- Corrigindo os Assertions nos Testes Quebrados
 
 ### Seção 37: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros
 - ~~Apresentação da Seção - Consumindo uma API de Terceiros com ChatGPT~~
