@@ -156,12 +156,12 @@
 - ~~Docker Commands - stats, system~~
 
 ### Seção 17: Testes de Integração com TestContainers e REST Assured
-- Apresentação da Seção - Testes de Integração
-- Conhecendo as Ferramentas de Testes de Integração e Adicionando-as ao Projeto
-- Adicionando as Dependências do TestContainers e do REST-Assured ao Projeto
-- Preparando a Infraestrutura de Testes com Testcontainers
-- Testando a Geração da Página do Swagger UI c. Testcontainers e Rest Assured
-- Importando o Swagger Api-Docs da nossa API no Postman
+- ~~Apresentação da Seção - Testes de Integração~~
+- ~~Conhecendo as Ferramentas de Testes de Integração e Adicionando-as ao Projeto~~
+- ~~Adicionando as Dependências do TestContainers e do REST-Assured ao Projeto~~
+- ~~Preparando a Infraestrutura de Testes com Testcontainers~~
+- ~~Testando a Geração da Página do Swagger UI c. Testcontainers e Rest Assured~~
+- ~~Importando o Swagger Api-Docs da nossa API no Postman~~
 
 ### Seção 18: Configurando Cross-Origin Resource Sharing (CORS)
 - Apresentação da Seção - Configurando o Cross-Origin Resource Sharing (CORS)

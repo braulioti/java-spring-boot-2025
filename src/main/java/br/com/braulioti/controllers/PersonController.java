@@ -2,7 +2,7 @@ package br.com.braulioti.controllers;
 
 import br.com.braulioti.controllers.docs.PersonControllerDocs;
 import br.com.braulioti.data.dto.PersonDTO;
-import br.com.braulioti.services.PersonService;
+import br.com.braulioti.unittests.services.PersonService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

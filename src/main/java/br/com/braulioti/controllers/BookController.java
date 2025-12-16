@@ -2,7 +2,7 @@ package br.com.braulioti.controllers;
 
 import br.com.braulioti.controllers.docs.BookControllerDocs;
 import br.com.braulioti.data.dto.BookDTO;
-import br.com.braulioti.services.BookService;
+import br.com.braulioti.unittests.services.BookService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
