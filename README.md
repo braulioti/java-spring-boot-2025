@@ -164,12 +164,12 @@
 - ~~Importando o Swagger Api-Docs da nossa API no Postman~~
 
 ### Seção 18: Configurando Cross-Origin Resource Sharing (CORS)
-- Apresentação da Seção - Configurando o Cross-Origin Resource Sharing (CORS)
-- O que é o Cross-Origin Resource Sharing (CORS)
-- Como Habilitar o CORS no Spring Boot
-- Habilitando CORS de Forma Global
-- Criando um Teste de Integração para Validar a Aplicação CORS
-- Testando a Aplicação de CORS com Diferentes Origins
+- ~~Apresentação da Seção - Configurando o Cross-Origin Resource Sharing (CORS)~~
+- ~~O que é o Cross-Origin Resource Sharing (CORS)~~
+- ~~Como Habilitar o CORS no Spring Boot~~
+- ~~Habilitando CORS de Forma Global~~
+- ~~Criando um Teste de Integração para Validar a Aplicação CORS~~
+- ~~Testando a Aplicação de CORS com Diferentes Origins~~
 
 ### Seção 19: O verbo PATCH
 - Apresentação da Seção - O Verbo PATCH
@@ -262,6 +262,22 @@
 - Ajustando o Datasource JRXML no JasperSoft Studio (iReport)
 - Refatorando os Exporters
 - Corrigindo os Assertions nos Testes Quebrados
+
+### Seção 24: Enviando E-mails com Spring Mail e Gmail
+- Apresentação da Seção - Enviando E-mails com Spring Mail e Gmail
+- Adicionando Dependência Spring Mail ao POM da API
+- Gerando a Chave de Acesso ao Gmail
+- Lendo as configurações de e-Mail Setadas no YML
+- Os Padrões de Projetos Builder e Fluent
+- Implementando o e-mail Sender
+- Finalizando o e-mail Sender
+- Ajustando o Service para Enviar e-Mails
+- Criando a documentação do Controller com Swagger
+- Implementando o Endpoint Responsável por Enviar e-mails Simples
+- Testando o Envio de e-Mails no Postman
+- Ajustando o Service para Enviar e-Mails com Anexo
+- Implementando o Endpoint Responsável por enviar e-Mails com Anexo
+- Testando o Envio de e-Mails com Anexo no Postman
 
 ### Seção 37: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros
 - ~~Apresentação da Seção - Consumindo uma API de Terceiros com ChatGPT~~

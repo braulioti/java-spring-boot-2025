@@ -1,15 +1,30 @@
 package br.com.braulioti.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
+    @Value("${cors.originPatterns}")
+    private String corsOriginPatterns = "";
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        var allowedOrigins = corsOriginPatterns.split(",");
+        registry.addMapping("/**")
+            .allowedOrigins(allowedOrigins)
+            // .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
+            .allowedMethods("*")
+            .allowCredentials(true);
+    }
 
     @Override
     public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
+
         // Via EXTENSION. http://localhost:9000/person/12.xml or http://localhost:9000/person/12.json Deprecated on Spring Boot 2.6
 
         // Via QUERY PARAM http://localhost:9000/person/12?mediaType=xml

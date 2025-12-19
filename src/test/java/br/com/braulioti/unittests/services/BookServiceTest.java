@@ -4,6 +4,7 @@ import br.com.braulioti.data.dto.BookDTO;
 import br.com.braulioti.exception.RequiredObjectsNullException;
 import br.com.braulioti.model.Book;
 import br.com.braulioti.repositoriy.BookRepository;
+import br.com.braulioti.services.BookService;
 import br.com.braulioti.unittests.mapper.mocks.MockBook;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

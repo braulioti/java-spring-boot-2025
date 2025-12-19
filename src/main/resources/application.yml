@@ -13,6 +13,8 @@ spring:
       hibernate:
     show-sql: false
     open-in-view: false
+cors:
+  originPatterns: http://localhost:9000,http://localhost:3000,https://brau.io
 server:
   port: 9000
   tomcat:

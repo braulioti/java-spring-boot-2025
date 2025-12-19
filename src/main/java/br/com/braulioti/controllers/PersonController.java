@@ -2,7 +2,7 @@ package br.com.braulioti.controllers;
 
 import br.com.braulioti.controllers.docs.PersonControllerDocs;
 import br.com.braulioti.data.dto.PersonDTO;
-import br.com.braulioti.unittests.services.PersonService;
+import br.com.braulioti.services.PersonService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+// @CrossOrigin(origins = "http://localhost:9000")
 @RestController
 @RequestMapping("/api/person/v1")
 @Tag(name = "People", description = "Endpoints for Managing People")
@@ -28,6 +29,7 @@ public class PersonController implements PersonControllerDocs {
         return service.findAll();
     }
 
+    // @CrossOrigin(origins = "http://localhost:9000")
     @GetMapping(value = "/{id}", produces = {
             MediaType.APPLICATION_JSON_VALUE,
             MediaType.APPLICATION_XML_VALUE,
@@ -38,6 +40,7 @@ public class PersonController implements PersonControllerDocs {
         return service.findById(id);
     }
 
+    // @CrossOrigin(origins = {"http://localhost:9000", "https://brau.io"})
     @PostMapping(produces = {
             MediaType.APPLICATION_JSON_VALUE,
             MediaType.APPLICATION_XML_VALUE,

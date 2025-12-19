@@ -4,6 +4,7 @@ import br.com.braulioti.data.dto.PersonDTO;
 import br.com.braulioti.exception.RequiredObjectsNullException;
 import br.com.braulioti.model.Person;
 import br.com.braulioti.repositoriy.PersonRepository;
+import br.com.braulioti.services.PersonService;
 import br.com.braulioti.unittests.mapper.mocks.MockPerson;
 
 import static org.junit.jupiter.api.Assertions.*;
