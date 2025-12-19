@@ -1,7 +1,7 @@
-package br.com.braulioti.integrationtests.controllers.withjson;
+package br.com.braulioti.integrationtests.controllers.cors.withjson;
 
 import br.com.braulioti.config.TestConfigs;
-import br.com.braulioti.data.dto.PersonDTO;
+import br.com.braulioti.integrationtests.dto.PersonDTO;
 import br.com.braulioti.integrationtests.testcontainers.AbstractIntegrationTest;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -21,7 +21,7 @@ import static junit.framework.TestCase.*;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-class PersonControllerTest extends AbstractIntegrationTest  {
+class PersonControllerCorsTest extends AbstractIntegrationTest  {
 
     private static RequestSpecification specification;
     private static ObjectMapper objectMapper;
@@ -74,6 +74,7 @@ class PersonControllerTest extends AbstractIntegrationTest  {
         assertEquals("Stallman", createdPerson.getLastName());
         assertEquals("New York City - New York - USA", createdPerson.getAddress());
         assertEquals("Male", createdPerson.getGender());
+        assertTrue(createdPerson.getEnabled());
     }
 
     @Test
@@ -103,32 +104,7 @@ class PersonControllerTest extends AbstractIntegrationTest  {
 
     @Test
     @Order(3)
-    void findById() {
-        specification = new RequestSpecBuilder()
-                .addHeader(TestConfigs.HEADER_PARAM_ORIGIN, TestConfigs.ORIGIN_BRAULIO_TI)
-                .setBasePath("/api/person/v1")
-                .setPort(TestConfigs.SERVER_PORT)
-                .addFilter(new RequestLoggingFilter(LogDetail.ALL))
-                .addFilter(new ResponseLoggingFilter(LogDetail.ALL))
-                .build();
-
-        var content = given(specification)
-                .contentType(MediaType.APPLICATION_JSON_VALUE)
-                .pathParam("id", person.getId())
-                .when()
-                .get("{id}")
-                .then()
-                .statusCode(403)
-                .extract()
-                .body()
-                .asString();
-
-        assertEquals("Invalid CORS request", content);
-    }
-
-    @Test
-    @Order(4)
-    void findByIdWithWrongOrigin() throws JsonProcessingException {
+    void findById() throws JsonProcessingException {
         specification = new RequestSpecBuilder()
                 .addHeader(TestConfigs.HEADER_PARAM_ORIGIN, TestConfigs.ORIGIN_LOCALHOST)
                 .setBasePath("/api/person/v1")
@@ -163,6 +139,32 @@ class PersonControllerTest extends AbstractIntegrationTest  {
         assertEquals("Stallman", createdPerson.getLastName());
         assertEquals("New York City - New York - USA", createdPerson.getAddress());
         assertEquals("Male", createdPerson.getGender());
+        assertTrue(createdPerson.getEnabled());
+    }
+
+    @Test
+    @Order(4)
+    void findByIdWithWrongOrigin() {
+        specification = new RequestSpecBuilder()
+                .addHeader(TestConfigs.HEADER_PARAM_ORIGIN, TestConfigs.ORIGIN_BRAULIO_TI)
+                .setBasePath("/api/person/v1")
+                .setPort(TestConfigs.SERVER_PORT)
+                .addFilter(new RequestLoggingFilter(LogDetail.ALL))
+                .addFilter(new ResponseLoggingFilter(LogDetail.ALL))
+                .build();
+
+        var content = given(specification)
+                .contentType(MediaType.APPLICATION_JSON_VALUE)
+                .pathParam("id", person.getId())
+                .when()
+                .get("{id}")
+                .then()
+                .statusCode(403)
+                .extract()
+                .body()
+                .asString();
+
+        assertEquals("Invalid CORS request", content);
     }
 
     @Test
@@ -182,5 +184,6 @@ class PersonControllerTest extends AbstractIntegrationTest  {
         person.setLastName("Stallman");
         person.setAddress("New York City - New York - USA");
         person.setGender("Male");
+        person.setEnabled(true);
     }
 }

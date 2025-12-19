@@ -172,18 +172,18 @@
 - ~~Testando a Aplicação de CORS com Diferentes Origins~~
 
 ### Seção 19: O verbo PATCH
-- Apresentação da Seção - O Verbo PATCH
-- Quando e Porque usar o Verbo PATCH
-- Trabalhando com o Verbo PATCH
-- Finalizando a Implementação e Testando no Postman
-- Automatizando os Testes das Operações de Create e Update com JSON
-- Automatizando os Testes das Operações de Disable e Delete com JSON
-- Automatizando os Testes das Operações de findAll com JSON
-- [DESAFIO] Automatizar os Testes das Operações com XML
-- [SOLUÇÃO] Automatizar os Testes das Operações com XML
-- [DESAFIO] Automatizar os Testes das Operações com YAML
-- [SOLUÇÃO] Automatizar os Testes das Operações com YAML - Criando Mapper
-- [SOLUÇÃO] Finalizando os Testes de Integração com YAML
+- ~~Apresentação da Seção - O Verbo PATCH~~
+- ~~Quando e Porque usar o Verbo PATCH~~
+- ~~Trabalhando com o Verbo PATCH~~
+- ~~Finalizando a Implementação e Testando no Postman~~
+- ~~Automatizando os Testes das Operações de Create e Update com JSON~~
+- ~~Automatizando os Testes das Operações de Disable e Delete com JSON~~
+- ~~Automatizando os Testes das Operações de findAll com JSON~~
+- ~~[DESAFIO] Automatizar os Testes das Operações com XML~~
+- ~~[SOLUÇÃO] Automatizar os Testes das Operações com XML~~
+- ~~[DESAFIO] Automatizar os Testes das Operações com YAML~~
+- ~~[SOLUÇÃO] Automatizar os Testes das Operações com YAML - Criando Mapper~~
+- ~~[SOLUÇÃO] Finalizando os Testes de Integração com YAML~~
 
 ### Seção 20: Query Params e Busca Paginada
 - Apresentação da Seção - Query Params e Busca Paginada
@@ -278,6 +278,26 @@
 - Ajustando o Service para Enviar e-Mails com Anexo
 - Implementando o Endpoint Responsável por enviar e-Mails com Anexo
 - Testando o Envio de e-Mails com Anexo no Postman
+
+### Seção 25: Autenticação com JWT e Spring Security
+- Apresentação de Seção - Autenticação com JWT e Spring Security
+- Entendendo o Modelo de Dados Necessário à Autenticação
+- Adicionando o Spring Security, o JWT e Mapeando as Entidades
+- Mapeando o Relacionamento ManyToMany entre User e Permission
+- Implementando o UserRepository e o UserService
+- Criando Exceptions Customizadas e o DTO de Credenciais
+- Implementando o JWTTokenFilter
+- Implementando o SecurityConfig
+- Implementando o Authencication Manager e SecurityFilterChain
+- Implementando o Serviço Responsável pela Autenticação
+- Implementando o Controller de Autenticação
+- Testando Nossa API no Postman
+- Atualizando o Environmant no Postman para Armazenar o AccessToken
+- Implementando o RefreshToken
+- Testando a Implementação do RefreshToken no Postman
+- Criando um Endpoint para Cadastrar novos Usuários no Sistema
+- Adicionando a Interface de Documentação do Swagger Open API
+- [DESAFIO] Implementar a Documentação do Swagger para o Recurso de Authentic
 
 ### Seção 37: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros
 - ~~Apresentação da Seção - Consumindo uma API de Terceiros com ChatGPT~~
