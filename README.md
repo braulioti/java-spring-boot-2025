@@ -205,15 +205,15 @@
 - ~~Aprendendo a Testar os Repositórios~~
 
 ### Seção 21: Upload e Download de Arquivos
-- Apresentação da Seção - Upload e Download de Arquivos
-- Definindo as Configurações de Upload e Download
-- Definindo as Exceptions e o DTO de Response
-- Criando o Serviço Responsável por Armazenar o Arquivo em Disco
-- Criando a Interface e o Controller Responsáveis pelo Upload e Download
-- Estruturando o Controller Responsável Pelo Upload e Download de Arquivos
-- Implementando o Download de Vários Arquivos Simultaneamente
-- Preparando o Serviço para Prover Downloads
-- Implementando o Download de Arquivos
+- ~~Apresentação da Seção - Upload e Download de Arquivos~~
+- ~~Definindo as Configurações de Upload e Download~~
+- ~~Definindo as Exceptions e o DTO de Response~~
+- ~~Criando o Serviço Responsável por Armazenar o Arquivo em Disco~~
+- ~~Criando a Interface e o Controller Responsáveis pelo Upload e Download~~
+- ~~Estruturando o Controller Responsável Pelo Upload e Download de Arquivos~~
+- ~~Implementando o Download de Vários Arquivos Simultaneamente~~
+- ~~Preparando o Serviço para Prover Downloads~~
+- ~~Implementando o Download de Arquivos~~
 
 ### Seção 22: Importação e Exportação de Planilhas Excel e CSV
 - Apresentação da Seção - Importação e Exportação de Planilhas Excel e CSV
@@ -321,6 +321,18 @@
 - [DESAFIO] Corrigir os Testes de Integração do Controller de Person com YAML
 - [SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com YAML
 - ~~[DESAFIO] Corrigir os Testes de Integração de Books com JSON, XML e YML~~
+
+### Seção 27: Introdução à Orquestração de Containers com Docker Compose
+- Apresentação da Seção - Introdução à Orquestração de Containers com Docker Compose
+- O que é o Docker Compose
+- Entendendo como Funciona o Arquivo docker-compose.yml
+- Volumes e Variáveis de Ambiente do Docker Compose
+- Redes no Docker Compose
+- Conheça os Comandos do Docker Compose Iniciando uma Stack com Wordpress
+- Parando Contêiners do Docker Compose
+- Manutenção de contêiners no Docker Compose
+- Configurando a Reinicialização Automática de Contêiners
+- Status de Contêiners com Docker Compose
 
 ### Seção 37: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros
 - ~~Apresentação da Seção - Consumindo uma API de Terceiros com ChatGPT~~
