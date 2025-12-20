@@ -1,20 +1,17 @@
-package br.com.braulioti.data.dto;
+package br.com.braulioti.integrationtests.dto;
 
-import jakarta.persistence.*;
-import org.springframework.hateoas.RepresentationModel;
-import org.springframework.hateoas.server.core.Relation;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-@Relation(collectionRelation = "books")
-public class BookDTO extends RepresentationModel<PersonDTO>  implements Serializable {
+@XmlRootElement
+public class BookDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     private Long id;
-
     private String author;
     private Date launchDate;
     private Double price;
@@ -66,11 +63,11 @@ public class BookDTO extends RepresentationModel<PersonDTO>  implements Serializ
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         BookDTO book = (BookDTO) o;
-        return Objects.equals(id, book.id) && Objects.equals(author, book.author) && Objects.equals(launchDate, book.launchDate) && Objects.equals(price, book.price) && Objects.equals(title, book.title);
+        return Objects.equals(getId(), book.getId()) && Objects.equals(getAuthor(), book.getAuthor()) && Objects.equals(getLaunchDate(), book.getLaunchDate()) && Objects.equals(getPrice(), book.getPrice()) && Objects.equals(getTitle(), book.getTitle());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, author, launchDate, price, title);
+        return Objects.hash(getId(), getAuthor(), getLaunchDate(), getPrice(), getTitle());
     }
 }

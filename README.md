@@ -186,17 +186,23 @@
 - ~~[SOLUÇÃO] Finalizando os Testes de Integração com YAML~~
 
 ### Seção 20: Query Params e Busca Paginada
-- Apresentação da Seção - Query Params e Busca Paginada
-- Busca paginada, Mockaroo e Query Params
-- Implementando Paginação com Pageable e Query Params
-- Implementando Ordenação com Direction
-- O que é HAL e como ele complementa HATEOAS
-- Implementando HAL com PagedModel
-- Entendendo os conceitos de HAL no JSON Retornado
-- [DESAFIO] Implemente Paginação e HAL na Operação de FindAll Books
-- Implementando o Teste de Integração da Operação FindByName
-- [DESAFIO] Implementar os Testes de Integração para FindByName com UML e XML
-- Aprendendo a Testar os Repositórios
+- ~~Apresentação da Seção - Query Params e Busca Paginada~~
+- ~~Busca paginada, Mockaroo e Query Params~~
+- ~~Implementando Paginação com Pageable e Query Params~~
+- ~~Implementando Ordenação com Direction~~
+- ~~O que é HAL e como ele complementa HATEOAS~~
+- ~~Implementando HAL com PagedModel~~
+- ~~Entendendo os conceitos de HAL no JSON Retornado~~
+- ~~[DESAFIO] Implemente Paginação e HAL na Operação de FindAll Books~~
+- ~~[SOLUÇÃO] Implemente Paginação e HAL na Operação de FindAll Books~~
+- ~~Passando parâmetros ao Pageable~~
+- ~~Ajustando os Testes de Integração Quebrados do Endpoint de Person~~
+- ~~Passando Parâmetros de Paginação e Ajustando as Assertions~~
+- ~~Ajustando os Testes de Integração Quebrados com XML e YML de PersonController~~
+- ~~[DESAFIO] Implementar os Testes de Integração para o Endpoint de Books~~
+- ~~Implementando o Teste de Integração da Operação FindByName~~
+- ~~[DESAFIO] Implementar os Testes de Integração para FindByName com YML e XML~~
+- ~~Aprendendo a Testar os Repositórios~~
 
 ### Seção 21: Upload e Download de Arquivos
 - Apresentação da Seção - Upload e Download de Arquivos
@@ -298,6 +304,23 @@
 - Criando um Endpoint para Cadastrar novos Usuários no Sistema
 - Adicionando a Interface de Documentação do Swagger Open API
 - [DESAFIO] Implementar a Documentação do Swagger para o Recurso de Authentic
+
+### Seção 26: Blindando nossa API com Rest Assured, Testcontainers e JUnit 5
+- Apresentação da Seção - Blindando nossa API com Rest Assured, Testcontainers e JUnit 5
+- Criando os Testes de Integração do Controller de Login com o JSON
+- Criando o Teste de Integração para o Endpoint de RefreshToken
+- [DESAFIO] Criar os Testes de Integração do Controller de Login com o XML
+- [SOLUÇÃO] Criar os Testes de Integração do Controller de Login com o XML
+- [DESAFIO] Criar os Testes de Integração do Controller de Login com o YAML
+- [SOLUÇÃO] Criar os Testes de Integração do Controller de Login com o YAML
+- Fixando os testes de CORS Quebrados
+- [DESAFIO] Corrigir os Testes de Integração do Controller de Person com JSON
+- [SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com JSON
+- [DESAFIO] Corrigir os Testes de Integração do Controller de Person com XML
+- [SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com XML
+- [DESAFIO] Corrigir os Testes de Integração do Controller de Person com YAML
+- [SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com YAML
+- ~~[DESAFIO] Corrigir os Testes de Integração de Books com JSON, XML e YML~~
 
 ### Seção 37: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros
 - ~~Apresentação da Seção - Consumindo uma API de Terceiros com ChatGPT~~

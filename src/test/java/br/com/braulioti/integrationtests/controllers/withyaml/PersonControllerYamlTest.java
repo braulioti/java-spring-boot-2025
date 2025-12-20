@@ -3,6 +3,7 @@ package br.com.braulioti.integrationtests.controllers.withyaml;
 import br.com.braulioti.config.TestConfigs;
 import br.com.braulioti.integrationtests.controllers.withyaml.mapper.YAMLMapper;
 import br.com.braulioti.integrationtests.dto.PersonDTO;
+import br.com.braulioti.integrationtests.dto.wrappers.xml.PagedModelPerson;
 import br.com.braulioti.integrationtests.testcontainers.AbstractIntegrationTest;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -216,6 +217,7 @@ class PersonControllerYamlTest extends AbstractIntegrationTest  {
                 )
                 .spec(specification)
                 .accept(MediaType.APPLICATION_YAML_VALUE)
+                .queryParams("page", 3, "size", 12, "direction", "asc")
                 .when()
                 .get()
                 .then()
@@ -223,29 +225,29 @@ class PersonControllerYamlTest extends AbstractIntegrationTest  {
                 .contentType(MediaType.APPLICATION_YAML_VALUE)
                 .extract()
                 .body()
-                .as(PersonDTO[].class, objectMapper);
+                .as(PagedModelPerson.class, objectMapper);
 
-        List<PersonDTO> people = Arrays.asList(response);
+        List<PersonDTO> people = response.getContent();
 
         PersonDTO personOne = people.get(0);
 
         assertNotNull(personOne.getId());
         assertTrue(personOne.getId() > 0);
 
-        assertEquals("Ayrton", personOne.getFirstName());
-        assertEquals("Senna", personOne.getLastName());
-        assertEquals("São Paulo - Brasil", personOne.getAddress());
-        assertEquals("Male", personOne.getGender());
-        assertTrue(personOne.getEnabled());
+        assertEquals("Amitie", personOne.getFirstName());
+        assertEquals("Allibone", personOne.getLastName());
+        assertEquals("Apt 982", personOne.getAddress());
+        assertEquals("Female", personOne.getGender());
+        assertFalse(personOne.getEnabled());
 
         PersonDTO personFive = people.get(4);
 
         assertNotNull(personFive.getId());
         assertTrue(personFive.getId() > 0);
 
-        assertEquals("Muhamamd", personFive.getFirstName());
-        assertEquals("Ali", personFive.getLastName());
-        assertEquals("Kentucky - US", personFive.getAddress());
+        assertEquals("Anatole", personFive.getFirstName());
+        assertEquals("Hiscoke", personFive.getLastName());
+        assertEquals("Apt 1439", personFive.getAddress());
         assertEquals("Male", personFive.getGender());
         assertTrue(personFive.getEnabled());
     }
