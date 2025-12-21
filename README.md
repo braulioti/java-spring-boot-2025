@@ -323,16 +323,16 @@
 - ~~[DESAFIO] Corrigir os Testes de Integração de Books com JSON, XML e YML~~
 
 ### Seção 27: Introdução à Orquestração de Containers com Docker Compose
-- Apresentação da Seção - Introdução à Orquestração de Containers com Docker Compose
-- O que é o Docker Compose
-- Entendendo como Funciona o Arquivo docker-compose.yml
-- Volumes e Variáveis de Ambiente do Docker Compose
-- Redes no Docker Compose
-- Conheça os Comandos do Docker Compose Iniciando uma Stack com Wordpress
-- Parando Contêiners do Docker Compose
-- Manutenção de contêiners no Docker Compose
-- Configurando a Reinicialização Automática de Contêiners
-- Status de Contêiners com Docker Compose
+- ~~Apresentação da Seção - Introdução à Orquestração de Containers com Docker Compose~~
+- ~~O que é o Docker Compose~~
+- ~~Entendendo como Funciona o Arquivo docker-compose.yml~~
+- ~~Volumes e Variáveis de Ambiente do Docker Compose~~
+- ~~Redes no Docker Compose~~
+- ~~Conheça os Comandos do Docker Compose Iniciando uma Stack com Wordpress~~
+- ~~Parando Contêiners do Docker Compose~~
+- ~~Manutenção de contêiners no Docker Compose~~
+- ~~Configurando a Reinicialização Automática de Contêiners~~
+- ~~Status de Contêiners com Docker Compose~~
 
 ### Seção 37: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros
 - ~~Apresentação da Seção - Consumindo uma API de Terceiros com ChatGPT~~
