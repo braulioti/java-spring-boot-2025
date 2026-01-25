@@ -6,8 +6,7 @@ import br.com.braulioti.exception.BadRequestException;
 import br.com.braulioti.exception.FileStorageException;
 import br.com.braulioti.exception.RequiredObjectsNullException;
 import br.com.braulioti.exception.ResourceNotFoundException;
-import br.com.braulioti.file.exporter.MediaTypes;
-import br.com.braulioti.file.exporter.contract.FileExporter;
+import br.com.braulioti.file.exporter.contract.PersonExporter;
 import br.com.braulioti.file.exporter.factory.FileExporterFactory;
 import br.com.braulioti.file.importer.contract.FileImporter;
 import br.com.braulioti.file.importer.factory.FileImporterFactory;
@@ -69,14 +68,29 @@ public class PersonService {
         return dto;
     }
 
+    public Resource exportPerson(Long id, String acceptHeader) {
+        logger.info("Export data of one Person!");
+
+        var person = repository.findById(id)
+                .map(entity -> parseObject(entity, PersonDTO.class))
+                .orElseThrow(() -> new ResourceNotFoundException("No records found for this ID!"));
+
+        try {
+            PersonExporter exporter = this.exporter.getExporter(acceptHeader);
+            return exporter.exportPerson(person);
+        } catch (Exception e) {
+            throw new RuntimeException("Error during file export", e);
+        }
+    }
+
     public Resource exportPage(Pageable pageable, String acceptHeader) {
         logger.info("Exporting a People page!");
 
         var people = repository.findAll(pageable)
                 .map(person -> parseObject(person, PersonDTO.class)).getContent();
         try {
-            FileExporter exporter = this.exporter.getExporter(acceptHeader);
-            return exporter.exportFile(people);
+            PersonExporter exporter = this.exporter.getExporter(acceptHeader);
+            return exporter.exportPeople(people);
         } catch (Exception e) {
             throw new RuntimeException("Error during file export", e);
         }

@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.Map;
 
 // @CrossOrigin(origins = "http://localhost:9000")
 @RestController
@@ -75,6 +76,19 @@ public class PersonController implements PersonControllerDocs {
         return service.findById(id);
     }
 
+    @GetMapping(value = "/export/{id}", produces = MediaType.APPLICATION_PDF_VALUE)
+    @Override
+    public ResponseEntity<Resource> export(@PathVariable("id") Long id, HttpServletRequest request) {
+
+        String acceptHeader = request.getHeader(HttpHeaders.ACCEPT);
+        Resource file = service.exportPerson(id, acceptHeader);
+
+        return ResponseEntity.ok()
+                .contentType(MediaType.parseMediaType(acceptHeader))
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=person.pdf")
+                .body(file);
+    }
+
     // @CrossOrigin(origins = {"http://localhost:9000", "https://brau.io"})
     @PostMapping(produces = {
             MediaType.APPLICATION_JSON_VALUE,
@@ -104,7 +118,8 @@ public class PersonController implements PersonControllerDocs {
     @GetMapping(value = "/exportPage",
     produces = {
             MediaTypes.APPLICATION_XLSX_VALUE,
-            MediaTypes.APPLICATION_CSV_VALUE
+            MediaTypes.APPLICATION_CSV_VALUE,
+            MediaTypes.APPLICATION_PDF_VALUE
     })
     @Override
     public ResponseEntity<Resource> exportPage(
@@ -118,8 +133,14 @@ public class PersonController implements PersonControllerDocs {
         String acceptHeader = request.getHeader(HttpHeaders.ACCEPT);
         Resource file = service.exportPage(pageable, acceptHeader);
 
+        Map<String, String> extensionMap = Map.of(
+                MediaTypes.APPLICATION_XLSX_VALUE, ".xlsx",
+                MediaTypes.APPLICATION_CSV_VALUE, ".csv",
+                MediaTypes.APPLICATION_PDF_VALUE, ".pdf"
+        );
+
+        var fileExtension = extensionMap.getOrDefault(acceptHeader, "");
         var contentType = acceptHeader != null ? acceptHeader : MediaType.APPLICATION_OCTET_STREAM_VALUE;
-        var fileExtension = MediaTypes.APPLICATION_XLSX_VALUE.equalsIgnoreCase(acceptHeader) ? ".xlsx" : ".csv";
         var filename = "people_exported" + fileExtension;
 
         return ResponseEntity.ok()

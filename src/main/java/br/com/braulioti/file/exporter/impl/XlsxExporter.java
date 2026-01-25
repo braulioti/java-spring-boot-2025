@@ -1,7 +1,7 @@
 package br.com.braulioti.file.exporter.impl;
 
 import br.com.braulioti.data.dto.PersonDTO;
-import br.com.braulioti.file.exporter.contract.FileExporter;
+import br.com.braulioti.file.exporter.contract.PersonExporter;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.core.io.ByteArrayResource;
@@ -13,10 +13,10 @@ import java.io.IOException;
 import java.util.List;
 
 @Component
-public class XlsxExporter implements FileExporter {
+public class XlsxExporter implements PersonExporter {
 
     @Override
-    public Resource exportFile(List<PersonDTO> people) throws IOException {
+    public Resource exportPeople(List<PersonDTO> people) throws IOException {
 
         try (Workbook workbook = new XSSFWorkbook()) {
             Sheet sheet = workbook.createSheet("People");
@@ -52,6 +52,11 @@ public class XlsxExporter implements FileExporter {
             workbook.write(outputStream);
             return new ByteArrayResource(outputStream.toByteArray());
         }
+    }
+
+    @Override
+    public Resource exportPerson(PersonDTO person) throws Exception {
+        return null;
     }
 
     private CellStyle createHeaderCellStye(Workbook workbook) {

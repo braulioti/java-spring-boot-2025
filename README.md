@@ -237,37 +237,37 @@
 - ~~Validando Funcionalidades no Postman~~
 
 ### Seção 23: Gerando Relatórios Profissionais com JasperReports e Spring Boot
-- Apresentação da Seção - Gerando Relatórios Profissionais com JasperReports e Spring Boot
-- JasperReports, Jasper Soft Studicio e como eles Primitem criar Relatórios
-- Instalando o JasperSoft Studio Community Edition
-- Criando um Data Adapter para o MySQL
-- Criando o nosso Primeiro Relatório no Jaspersoft Studio
-- Conhecendo o Layout Padrão dos Relatórios no Jaspersoft Studio
-- Montando o Layout do Relatório no Jaspersoft Studio
-- Adicionando o Logo Corporativo, Número de Páginas e Data de Geração do Relatório
-- Relatórios Zebrados com Jasper Reports
-- Adicionando as Dependências Maven do JasperReport
-- Ajustando nossa API RESTful para Suportar Exportação para mais um Formato
-- Implementando o PdfExporter com JasperSoft e JasperReports
-- Validando os Relatórios com JasperReport e iReport no Postman
-- Adicionando Novas Migrations ao Projeto
-- Mapeando os novos Atributos nas Entidades e VOs
-- Implementando o Mapeamento Many to Many entre Person e Books
-- Adicionando as Dependências Maven para Gerar QR Codes
-- Criando o Template do Relatório Principal
-- Parametrizando o Relatório e Adicionando Foto e QRCode
-- Terminando de Definir o Layout do Relatório Principal
-- Criando o Subrelatório com Jaspersoft Studio (iReport)
-- Definindo o Layout do Subrelatório no Jaspersoft Studio (iReport)
-- Zebrando o Subrelatório no Jaspersoft Studio (iReport)
-- Adicionando o Relatório do Jaspersoft Studio (iReport) à nossa API RESTful
-- Ajustando o Exporter de PDF para Gerar Relatórios com JasperSoft (iReport)
-- Criando o Serviço Responsável por Gerar QRCodes
-- Ajustando a Documentação Swagger do Controller
-- Ajustando o Controller para Gerar Relatórios com JasperSoft (iReport)
-- Ajustando o Datasource JRXML no JasperSoft Studio (iReport)
-- Refatorando os Exporters
-- Corrigindo os Assertions nos Testes Quebrados
+- ~~Apresentação da Seção - Gerando Relatórios Profissionais com JasperReports e Spring Boot~~
+- ~~JasperReports, Jasper Soft Studicio e como eles Primitem criar Relatórios~~
+- ~~Instalando o JasperSoft Studio Community Edition~~
+- ~~Criando um Data Adapter para o MySQL~~
+- ~~Criando o nosso Primeiro Relatório no Jaspersoft Studio~~
+- ~~Conhecendo o Layout Padrão dos Relatórios no Jaspersoft Studio~~
+- ~~Montando o Layout do Relatório no Jaspersoft Studio~~
+- ~~Adicionando o Logo Corporativo, Número de Páginas e Data de Geração do Relatório~~
+- ~~Relatórios Zebrados com Jasper Reports~~
+- ~~Adicionando as Dependências Maven do JasperReport~~
+- ~~Ajustando nossa API RESTful para Suportar Exportação para mais um Formato~~
+- ~~Implementando o PdfExporter com JasperSoft e JasperReports~~
+- ~~Validando os Relatórios com JasperReport e iReport no Postman~~
+- ~~Adicionando Novas Migrations ao Projeto~~
+- ~~Mapeando os novos Atributos nas Entidades e VOs~~
+- ~~Implementando o Mapeamento Many to Many entre Person e Books~~
+- ~~Adicionando as Dependências Maven para Gerar QR Codes~~
+- ~~Criando o Template do Relatório Principal~~
+- ~~Parametrizando o Relatório e Adicionando Foto e QRCode~~
+- ~~Terminando de Definir o Layout do Relatório Principal~~
+- ~~Criando o Subrelatório com Jaspersoft Studio (iReport)~~
+- ~~Definindo o Layout do Subrelatório no Jaspersoft Studio (iReport)~~
+- ~~Zebrando o Subrelatório no Jaspersoft Studio (iReport)~~
+- ~~Adicionando o Relatório do Jaspersoft Studio (iReport) à nossa API RESTful~~
+- ~~Ajustando o Exporter de PDF para Gerar Relatórios com JasperSoft (iReport)~~
+- ~~Criando o Serviço Responsável por Gerar QRCodes~~
+- ~~Ajustando a Documentação Swagger do Controller~~
+- ~~Ajustando o Controller para Gerar Relatórios com JasperSoft (iReport)~~
+- ~~Ajustando o Datasource JRXML no JasperSoft Studio (iReport)~~
+- ~~Refatorando os Exporters~~
+- ~~Corrigindo os Assertions nos Testes Quebrados~~
 
 ### Seção 24: Enviando E-mails com Spring Mail e Gmail
 - Apresentação da Seção - Enviando E-mails com Spring Mail e Gmail
@@ -352,6 +352,48 @@
 - Adicionando o Portainer à nossa Stack do Docker Compose
 - Executando a nossa Stack do Docker Compose e Conhecendo o Portainer
 - Executando a Stack a partir das Docker Images do Docker Hub
+
+### Seção 29: Implantando nossa API RESTful na Amazon AWS
+- Apresentação da Seção - Implantando nossa API RESTful na Amazon AWS
+- ~~O nível gratuito da Amazon AWS~~
+- ~~Criação de Uma Conta na Amazon AWS~~
+- Criação do Banco de Dados MySQL RDS na Amazon AWS
+- Integrando a Aplicação ao Banco MySQL RDS na Amazon AWS
+- Criação de um usuário IAM p. Gerenciar os nossos Serviços Amazon ECR e ECS
+- Criação de um Repositório Amazon AWS ECR para Armazenar nossa Docker Image
+- Instalando o Amazon AWS CLI
+- Reconstruindo as Docker Images com o Docker Compose
+- Enviando Docker Imagaes para o Amazon AWS ECR
+- Criação de um Cluster Amazon AWS ECS
+- Criando uma Taks Definition na Amazon AWS
+- Criando o Serviço na Amazon AWS
+- Testando a nossa Aplicação Implantada na Amazon AWS ECS
+
+### Seção 30: Deploy Contínuo na Amazon AWS com Github Actions
+- Apresentação da Seção - Integração Contínua na Amazon AWS com Github Actions
+- Entendendo a Integração, Entrega e Inplantação Contínuas
+- Criando as novas Variáveisde Ambiente no Github Actions
+- Configurando o Github Actions para Fazer o Push Automático da Docker Image
+- Entendendo como podemos Trabalhar com o Arquivo de Task Definition
+- Configurando o Github Actions para Fazer o Deploy Automático
+- Criando uma Badge de Status do Build no nosso Repositório no Github
+- Executando o Deploy Automático com Github Actions
+- Deletando os Serviços da Amazon AWS Utilizados no Curso
+
+### Seção 31: Implantando nossa API RESTful na Google Cloud Platform (GCP)
+- ~~Apresentação da Seção - Implantação na Google Cloud Platform~~
+- ~~Os serviços Disponíveis no Google Cloud Free Tier~~
+- ~~Criação de uma Conta na Google Cloud Platform~~
+- ~~Criação do Banco de Dados MySQL no Google Cloud SQL da Google Cloud~~
+- ~~Integrando a Aplicação do Banco MySQL no Cloud SQL da Google Cloud~~
+- ~~Criação de um Usuário IAM para Gerenciar os Serviços da Google Cloud~~
+- ~~Reconstruindo o Docker Images com o Docker Compose~~
+- ~~Criação de um Repo Google Artifact Registry p. Armazenar nossa Docker Image~~
+- ~~Instalando o Google Cloud CLI (gcloud CLI)~~
+- ~~Enviando Docker Images Para o Google Artifact Registry da Google Cloud~~
+- ~~Implantando a App no Google Cloud Run~~
+- ~~Testando a Aplicação Implantada na Google Cloud Run via Postman~~
+- ~~[CASO OCORRAM ERROS NA IMPLANTAÇÃO] O que verificar na Google Cloud Run via Postman~~
 
 ### Seção 36: [EXTRA - Minicurso de ReactJS] Consumindo a API com ReactJS
 - ~~Apresentação da Seção - Consumindo a API com ReactJS~~
