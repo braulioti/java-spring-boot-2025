@@ -12,6 +12,15 @@ spring:
       hibernate:
     show-sql: false
     open-in-view: false
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL_USERNAME}
+    password: ${EMAIL_PASSWORD}
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enabled: true
+      mail.smtp.starttls.required: true
   servlet:
     multipart:
       enabled: true
@@ -20,6 +29,9 @@ spring:
       max-request-size: 215MB
 file:
   upload-dir: E:/projetos/pessoal/java-spring-boot-2025/uploads
+email:
+  subject: "Default Subject"
+  message: "Default Message"
 server:
   port: 8888
   tomcat:

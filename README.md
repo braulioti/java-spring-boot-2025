@@ -270,20 +270,20 @@
 - ~~Corrigindo os Assertions nos Testes Quebrados~~
 
 ### Seção 24: Enviando E-mails com Spring Mail e Gmail
-- Apresentação da Seção - Enviando E-mails com Spring Mail e Gmail
-- Adicionando Dependência Spring Mail ao POM da API
-- Gerando a Chave de Acesso ao Gmail
-- Lendo as configurações de e-Mail Setadas no YML
-- Os Padrões de Projetos Builder e Fluent
-- Implementando o e-mail Sender
-- Finalizando o e-mail Sender
-- Ajustando o Service para Enviar e-Mails
-- Criando a documentação do Controller com Swagger
-- Implementando o Endpoint Responsável por Enviar e-mails Simples
-- Testando o Envio de e-Mails no Postman
-- Ajustando o Service para Enviar e-Mails com Anexo
-- Implementando o Endpoint Responsável por enviar e-Mails com Anexo
-- Testando o Envio de e-Mails com Anexo no Postman
+- ~~Apresentação da Seção - Enviando E-mails com Spring Mail e Gmail~~
+- ~~Adicionando Dependência Spring Mail ao POM da API~~
+- ~~Gerando a Chave de Acesso ao Gmail~~
+- ~~Lendo as configurações de e-Mail Setadas no YML~~
+- ~~Os Padrões de Projetos Builder e Fluent~~
+- ~~Implementando o e-mail Sender~~
+- ~~Finalizando o e-mail Sender~~
+- ~~Ajustando o Service para Enviar e-Mails~~
+- ~~Criando a documentação do Controller com Swagger~~
+- ~~Implementando o Endpoint Responsável por Enviar e-mails Simples~~
+- ~~Testando o Envio de e-Mails no Postman~~
+- ~~Ajustando o Service para Enviar e-Mails com Anexo~~
+- ~~Implementando o Endpoint Responsável por enviar e-Mails com Anexo~~
+- ~~Testando o Envio de e-Mails com Anexo no Postman~~
 
 ### Seção 25: Autenticação com JWT e Spring Security
 - Apresentação de Seção - Autenticação com JWT e Spring Security
@@ -394,6 +394,46 @@
 - ~~Implantando a App no Google Cloud Run~~
 - ~~Testando a Aplicação Implantada na Google Cloud Run via Postman~~
 - ~~[CASO OCORRAM ERROS NA IMPLANTAÇÃO] O que verificar na Google Cloud Run via Postman~~
+
+### Seção 32: Continuous Deployment na Google Cloud Platform (GCP) com o Github Actions
+- ~~Apresentação da Seção - Continuous Deployment na GCP com o Github Actions~~
+- ~~Criando novas Variáveis de Ambiente no Github Actions~~
+- ~~Configurando o Github Actions para Fazer o Push Automático das Docker Image~~
+- ~~Implementando Continuous Deployment na Google Cloud Run com Github Actions~~
+- ~~Testando o Continuous Deployment na Prática~~
+- ~~Criando uma Badge de Status do Build no nosso Repositório no Github~~
+- ~~Testando a Aplicação Implantada Automaticamente no Google Cloud Run~~
+- ~~Deletando os Serviços da Google Cloud que não Iremos mais Usar~~
+
+### Seção 33: Introdução à Clusterização com Kubernetes
+- ~~Apresentação da Seção - Introdução à Clusterização com Kubernetes~~
+- ~~Docker e Kubernetes: A Combinação Perfeita para API's RESTful Modernas~~
+- ~~Docker e Kubernetes Entendendo o Melhor de Ambos~~
+- ~~Curiosidades e o que é Kubernetes?~~
+- ~~Overview sobre os Clusters Kubernetes~~
+- ~~Fazendo o Deploy da nossa Primeira App Spring Boot em um Cluster Kubernetes~~
+- ~~Overview de Conceitos Chave do Kubernets - Pods, Replica Sets e Deployment~~
+- ~~Entendendo os Pods do Kubernetes~~
+- ~~Entendendo ReplicaSets em Kubernetes~~
+- ~~Entendendo Deployment no Kubernetes~~
+- ~~Conceitos Chave do Kubernetes - Pods, Replica Sets & Deployments~~
+- ~~Entendendo Services em Kubernetes~~
+- ~~Entendendo a Arquitetura do Kubernetes - Master Node e Worker Nodes~~
+- ~~Visualizando o Status dos Principais Componentes do Kubernetes~~
+- ~~Conhecendo o Kubernetes Dashboard~~
+
+### Seção 34: Executando um Cluster Kubernetes na Google Kubernetes Engine
+- ~~Apresentação da Seção - Executando um Cluster Kubernetes na GCP~~
+- ~~Criando um Cluster Kubernetes com Google Kubernetes Engine (GKE)~~
+- ~~Fazendo o Deploy da Primeira App em um Cluster Kubernetes da GCP~~
+- ~~Pods, Replica Sets de Deployment na Google Kubernetes Engine (GKE)~~
+- ~~Os Pods do Kubernetes na Google Kubernetes Engine (GKE)~~
+- ~~Os ReplicaSets na Google Kubernetes Engine (GKE)~~
+- ~~Os Deloyments na Google Kubernetes Engine (GKE)~~
+- ~~Inicializando o Cluster em Outra Região da Google Cloud~~
+- ~~Os Services na Google Kubernetes Engine (GKE)~~
+- ~~Conhecendo o Cloud Console o 'Kubernetes Dashboard' do GKE~~
+- ~~Deletar todos os recursos associados a um label~~
 
 ### Seção 36: [EXTRA - Minicurso de ReactJS] Consumindo a API com ReactJS
 - ~~Apresentação da Seção - Consumindo a API com ReactJS~~
