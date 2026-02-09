@@ -286,24 +286,26 @@
 - ~~Testando o Envio de e-Mails com Anexo no Postman~~
 
 ### Seção 25: Autenticação com JWT e Spring Security
-- Apresentação de Seção - Autenticação com JWT e Spring Security
-- Entendendo o Modelo de Dados Necessário à Autenticação
-- Adicionando o Spring Security, o JWT e Mapeando as Entidades
-- Mapeando o Relacionamento ManyToMany entre User e Permission
-- Implementando o UserRepository e o UserService
-- Criando Exceptions Customizadas e o DTO de Credenciais
-- Implementando o JWTTokenFilter
-- Implementando o SecurityConfig
-- Implementando o Authencication Manager e SecurityFilterChain
-- Implementando o Serviço Responsável pela Autenticação
-- Implementando o Controller de Autenticação
-- Testando Nossa API no Postman
-- Atualizando o Environmant no Postman para Armazenar o AccessToken
-- Implementando o RefreshToken
-- Testando a Implementação do RefreshToken no Postman
-- Criando um Endpoint para Cadastrar novos Usuários no Sistema
-- Adicionando a Interface de Documentação do Swagger Open API
-- [DESAFIO] Implementar a Documentação do Swagger para o Recurso de Authentic
+- ~~Apresentação de Seção - Autenticação com JWT e Spring Security~~
+- ~~Entendendo o Modelo de Dados Necessário à Autenticação~~
+- ~~Adicionando o Spring Security, o JWT e Mapeando as Entidades~~
+- ~~Mapeando o Relacionamento ManyToMany entre User e Permission~~
+- ~~Implementando o UserRepository e o UserService~~
+- ~~Criando Exceptions Customizadas e o DTO de Credenciais~~
+- ~~Implementando o JWTTokenProvider~~
+- ~~Finalizando a Implementação do JWTTokenProvider~~
+- ~~Implementando o JWTTokenFilter~~
+- ~~Implementando o SecurityConfig~~
+- ~~Implementando o Authentication Manager e SecurityFilterChain~~
+- ~~Implementando o Serviço Responsável pela Autenticação~~
+- ~~Implementando o Controller de Autenticação~~
+- ~~Testando Nossa API no Postman~~
+- ~~Atualizando o Environment no Postman para Armazenar o AccessToken~~
+- ~~Implementando o RefreshToken~~
+- ~~Testando a Implementação do RefreshToken no Postman~~
+- ~~Criando um Endpoint para Cadastrar novos Usuários no Sistema~~
+- ~~Adicionando a Interface de Documentação do Swagger Open API~~
+- ~~[DESAFIO] Implementar a Documentação do Swagger para o Recurso de Authentication~~
 
 ### Seção 26: Blindando nossa API com Rest Assured, Testcontainers e JUnit 5
 - Apresentação da Seção - Blindando nossa API com Rest Assured, Testcontainers e JUnit 5
@@ -434,6 +436,15 @@
 - ~~Os Services na Google Kubernetes Engine (GKE)~~
 - ~~Conhecendo o Cloud Console o 'Kubernetes Dashboard' do GKE~~
 - ~~Deletar todos os recursos associados a um label~~
+
+### Seção 35: Continuous Deployment na Google Cloud Platform (GCP) com GKE
+- ~~Apresentação da Seção - Continuous Deployment na GCP com Google Kubernetes~~
+- ~~Gerando novas Versões da API RESTful~~
+- ~~Implantando a Aplicação Definitiva na Google Kubernetes Engine~~
+- ~~Testando a Aplicação Implantada na Google Kubernetes Engine via Postman~~
+- ~~Implantando uma Nova Versão da Aplicação na Google Kubernetes Engine GKE~~
+- ~~Preparando o Script para Suportar Continuous Deployment na GKE~~
+- ~~Deletando os Serviços da Google Cloud Usados no Treinamento~~
 
 ### Seção 36: [EXTRA - Minicurso de ReactJS] Consumindo a API com ReactJS
 - ~~Apresentação da Seção - Consumindo a API com ReactJS~~

@@ -32,6 +32,11 @@ cors:
   originPatterns: http://localhost:9000,http://localhost:3000,https://brau.io
 file:
   upload-dir: E:/projetos/pessoal/java-spring-boot-2025/uploads
+security:
+  jwt:
+    token:
+      secret-key: 53cr37
+      expire-length: 3600000
 email:
   subject: "Default Subject"
   message: "Default Message"
@@ -44,6 +49,8 @@ logging:
     br.com.braulioti: debug
     #root: warn
 spring-doc:
-  paths-to-match: /api/**/v1/**
+  paths-to-match:
+    - /api/**/v1/**
+    - /auth/**
   swagger-ui:
     use-root-path: true

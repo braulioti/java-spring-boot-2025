@@ -1,8 +1,11 @@
 package br.com.braulioti.exception.handler;
 
 import br.com.braulioti.exception.*;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
@@ -85,5 +88,32 @@ public class CustomEntityResponseHandler extends ResponseEntityExceptionHandler 
         );
 
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(InvalidJwtAuthenticationException.class)
+    public final ResponseEntity<ExceptionResponse> handleInvalidJwtAuthenticationExceptions(
+            Exception ex, WebRequest request) {
+        ExceptionResponse response = new ExceptionResponse(
+                new Date(),
+                ex.getMessage(),
+                request.getDescription(false)
+        );
+
+        return new ResponseEntity<>(response, HttpStatus.FORBIDDEN);
+    }
+
+    @Override
+    protected ResponseEntity<Object> handleHttpMessageNotReadable(
+            HttpMessageNotReadableException ex,
+            HttpHeaders headers,
+            HttpStatusCode status,
+            WebRequest request) {
+        String message = "Invalid request body. Send valid JSON. Example: {\"username\": \"user\", \"password\": \"pass\"}. For /auth/createUser you may include \"fullName\".";
+        ExceptionResponse body = new ExceptionResponse(
+                new Date(),
+                message,
+                request.getDescription(false)
+        );
+        return new ResponseEntity<>(body, headers, HttpStatus.BAD_REQUEST);
     }
 }

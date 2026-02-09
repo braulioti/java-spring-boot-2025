@@ -29,6 +29,11 @@ spring:
       max-request-size: 215MB
 file:
   upload-dir: E:/projetos/pessoal/java-spring-boot-2025/uploads
+security:
+  jwt:
+    token:
+      secret-key: 53cr37
+      expire-length: 3600000
 email:
   subject: "Default Subject"
   message: "Default Message"
