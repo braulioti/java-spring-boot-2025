@@ -2,10 +2,11 @@ package br.com.braulioti.integrationtests.controllers.withyaml;
 
 import br.com.braulioti.config.TestConfigs;
 import br.com.braulioti.integrationtests.controllers.withyaml.mapper.YAMLMapper;
+import br.com.braulioti.integrationtests.dto.AccountCredentialsDTO;
 import br.com.braulioti.integrationtests.dto.BookDTO;
+import br.com.braulioti.integrationtests.dto.TokenDTO;
 import br.com.braulioti.integrationtests.dto.wrappers.xml.PagedModelBook;
 import br.com.braulioti.integrationtests.testcontainers.AbstractIntegrationTest;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.config.EncoderConfig;
 import io.restassured.config.RestAssuredConfig;
@@ -23,7 +24,8 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static junit.framework.TestCase.assertTrue;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Nested
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
@@ -34,25 +36,51 @@ class BookControllerYamlTest extends AbstractIntegrationTest {
     private static YAMLMapper objectMapper;
 
     private static BookDTO book;
+    private static TokenDTO token;
 
     @BeforeAll
     static void setUp() {
         objectMapper = new YAMLMapper();
         book = new BookDTO();
+        token = new TokenDTO();
+    }
+
+    @Test
+    @Order(0)
+    void signin() {
+        AccountCredentialsDTO credentials =
+                new AccountCredentialsDTO("leandro", "admin123");
+
+        token = given()
+                .baseUri("http://localhost")
+                .port(TestConfigs.SERVER_PORT)
+                .contentType(MediaType.APPLICATION_JSON_VALUE)
+                .body(credentials)
+                .when()
+                .post("/auth/signin")
+                .then()
+                .statusCode(200)
+                .extract()
+                .body()
+                .as(TokenDTO.class);
+
+        specification = new RequestSpecBuilder()
+                .addHeader(TestConfigs.HEADER_PARAM_ORIGIN, TestConfigs.ORIGIN_BRAU_IO)
+                .addHeader(TestConfigs.HEADER_PARAM_AUTHORIZATION, "Bearer " + token.getRefreshToken())
+                .setBasePath("/api/book/v1")
+                .setPort(TestConfigs.SERVER_PORT)
+                .addFilter(new RequestLoggingFilter(LogDetail.ALL))
+                .addFilter(new ResponseLoggingFilter(LogDetail.ALL))
+                .build();
+
+        assertNotNull(token.getAccessToken());
+        assertNotNull(token.getRefreshToken());
     }
 
     @Test
     @Order(1)
-    void createTest() throws JsonProcessingException {
+    void createTest() {
         mockBook();
-
-        specification = new RequestSpecBuilder()
-            .addHeader(TestConfigs.HEADER_PARAM_ORIGIN, TestConfigs.ORIGIN_BRAU_IO)
-            .setBasePath("/api/book/v1")
-            .setPort(TestConfigs.SERVER_PORT)
-                .addFilter(new RequestLoggingFilter(LogDetail.ALL))
-                .addFilter(new ResponseLoggingFilter(LogDetail.ALL))
-            .build();
 
         var createdBook = given().config(
                 RestAssuredConfig.config()
@@ -84,7 +112,7 @@ class BookControllerYamlTest extends AbstractIntegrationTest {
     
     @Test
     @Order(2)
-    void updateTest() throws JsonProcessingException {
+    void updateTest() {
 
         book.setTitle("Docker Deep Dive - Updated");
 
@@ -118,7 +146,7 @@ class BookControllerYamlTest extends AbstractIntegrationTest {
 
     @Test
     @Order(3)
-    void findByIdTest() throws JsonProcessingException {
+    void findByIdTest() {
 
         var createdBook = given().config(
                         RestAssuredConfig.config()
@@ -152,7 +180,7 @@ class BookControllerYamlTest extends AbstractIntegrationTest {
 
     @Test
     @Order(4)
-    void deleteTest() throws JsonProcessingException {
+    void deleteTest() {
 
         given(specification)
                 .pathParam("id", book.getId())
@@ -165,7 +193,7 @@ class BookControllerYamlTest extends AbstractIntegrationTest {
 
     @Test
     @Order(5)
-    void findAllTest() throws JsonProcessingException {
+    void findAllTest() {
 
         var response = given(specification)
                 .accept(MediaType.APPLICATION_YAML_VALUE)

@@ -2,11 +2,11 @@ package br.com.braulioti.integrationtests.controllers.withyaml;
 
 import br.com.braulioti.config.TestConfigs;
 import br.com.braulioti.integrationtests.controllers.withyaml.mapper.YAMLMapper;
+import br.com.braulioti.integrationtests.dto.AccountCredentialsDTO;
 import br.com.braulioti.integrationtests.dto.PersonDTO;
+import br.com.braulioti.integrationtests.dto.TokenDTO;
 import br.com.braulioti.integrationtests.dto.wrappers.xml.PagedModelPerson;
 import br.com.braulioti.integrationtests.testcontainers.AbstractIntegrationTest;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.config.EncoderConfig;
 import io.restassured.config.RestAssuredConfig;
@@ -19,11 +19,11 @@ import org.junit.jupiter.api.*;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static junit.framework.TestCase.*;
+import static org.junit.Assert.assertNotNull;
 
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
@@ -33,26 +33,52 @@ class PersonControllerYamlTest extends AbstractIntegrationTest  {
     private static RequestSpecification specification;
     private static YAMLMapper objectMapper;
     private static PersonDTO person;
+    private static TokenDTO token;
 
     @BeforeAll
     static void setUp() {
         objectMapper = new YAMLMapper();
 
         person = new PersonDTO();
+        token = new TokenDTO();
     }
 
     @Test
-    @Order(1)
-    void create() throws JsonProcessingException {
-        mockPerson();
+    @Order(0)
+    void signin() {
+        AccountCredentialsDTO credentials =
+                new AccountCredentialsDTO("leandro", "admin123");
+
+        token = given()
+                .baseUri("http://localhost")
+                .port(TestConfigs.SERVER_PORT)
+                .contentType(MediaType.APPLICATION_JSON_VALUE)
+                .body(credentials)
+                .when()
+                .post("/auth/signin")
+                .then()
+                .statusCode(200)
+                .extract()
+                .body()
+                .as(TokenDTO.class);
 
         specification = new RequestSpecBuilder()
                 .addHeader(TestConfigs.HEADER_PARAM_ORIGIN, TestConfigs.ORIGIN_BRAU_IO)
+                .addHeader(TestConfigs.HEADER_PARAM_AUTHORIZATION, "Bearer " + token.getRefreshToken())
                 .setBasePath("/api/person/v1")
                 .setPort(TestConfigs.SERVER_PORT)
                 .addFilter(new RequestLoggingFilter(LogDetail.ALL))
                 .addFilter(new ResponseLoggingFilter(LogDetail.ALL))
                 .build();
+
+        assertNotNull(token.getAccessToken());
+        assertNotNull(token.getRefreshToken());
+    }
+
+    @Test
+    @Order(1)
+    void create() {
+        mockPerson();
 
         var createdPerson = given().config(
                     RestAssuredConfig.config()
@@ -87,7 +113,7 @@ class PersonControllerYamlTest extends AbstractIntegrationTest  {
 
     @Test
     @Order(2)
-    void updateTest() throws JsonProcessingException {
+    void updateTest() {
         person.setLastName("Benedict Torvalds");
 
         var createdPerson = given().config(
@@ -123,7 +149,7 @@ class PersonControllerYamlTest extends AbstractIntegrationTest  {
 
     @Test
     @Order(3)
-    void findByIdTest() throws JsonProcessingException {
+    void findByIdTest() {
         var createdPerson = given().config(
                         RestAssuredConfig.config()
                                 .encoderConfig(EncoderConfig.encoderConfig()
@@ -157,7 +183,7 @@ class PersonControllerYamlTest extends AbstractIntegrationTest  {
 
     @Test
     @Order(4)
-    void disableTest() throws JsonProcessingException {
+    void disableTest() {
         var createdPerson = given().config(
                         RestAssuredConfig.config()
                                 .encoderConfig(EncoderConfig.encoderConfig()
@@ -190,7 +216,7 @@ class PersonControllerYamlTest extends AbstractIntegrationTest  {
 
     @Test
     @Order(5)
-    void deleteTest() throws JsonProcessingException {
+    void deleteTest() {
         given().config(
                         RestAssuredConfig.config()
                                 .encoderConfig(EncoderConfig.encoderConfig()
@@ -208,7 +234,7 @@ class PersonControllerYamlTest extends AbstractIntegrationTest  {
 
     @Test
     @Order(6)
-    void findAllTest() throws JsonProcessingException {
+    void findAllTest() {
         var response = given().config(
                         RestAssuredConfig.config()
                                 .encoderConfig(EncoderConfig.encoderConfig()
@@ -258,5 +284,7 @@ class PersonControllerYamlTest extends AbstractIntegrationTest  {
         person.setAddress("Helsinki - Finland");
         person.setGender("Male");
         person.setEnabled(true);
+        person.setProfileUrl("https://pt.wikipedia.org/wiki/Linus_Torvalds");
+        person.setPhotoUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/LinuxCon_Europe_Linus_Torvalds_03.jpg/250px-LinuxCon_Europe_Linus_Torvalds_03.jpg");
     }
 }

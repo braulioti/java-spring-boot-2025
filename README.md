@@ -308,19 +308,19 @@
 - ~~[DESAFIO] Implementar a Documentação do Swagger para o Recurso de Authentication~~
 
 ### Seção 26: Blindando nossa API com Rest Assured, Testcontainers e JUnit 5
-- Apresentação da Seção - Blindando nossa API com Rest Assured, Testcontainers e JUnit 5
-- Criando os Testes de Integração do Controller de Login com o JSON
-- Criando o Teste de Integração para o Endpoint de RefreshToken
-- [DESAFIO] Criar os Testes de Integração do Controller de Login com o XML
-- [SOLUÇÃO] Criar os Testes de Integração do Controller de Login com o XML
-- [DESAFIO] Criar os Testes de Integração do Controller de Login com o YAML
-- [SOLUÇÃO] Criar os Testes de Integração do Controller de Login com o YAML
-- Fixando os testes de CORS Quebrados
-- [DESAFIO] Corrigir os Testes de Integração do Controller de Person com JSON
-- [SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com JSON
-- [DESAFIO] Corrigir os Testes de Integração do Controller de Person com XML
+- ~~Apresentação da Seção - Blindando nossa API com Rest Assured, Testcontainers e JUnit 5~~
+- ~~Criando os Testes de Integração do Controller de Login com o JSON~~
+- ~~Criando o Teste de Integração para o Endpoint de RefreshToken~~
+- ~~[DESAFIO] Criar os Testes de Integração do Controller de Login com o XML~~
+- ~~[SOLUÇÃO] Criar os Testes de Integração do Controller de Login com o XML~~
+- ~~[DESAFIO] Criar os Testes de Integração do Controller de Login com o YAML~~
+- ~~[SOLUÇÃO] Criar os Testes de Integração do Controller de Login com o YAML~~
+- ~~Fixando os testes de CORS Quebrados~~
+- ~~[DESAFIO] Corrigir os Testes de Integração do Controller de Person com JSON~~
+- ~~[SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com JSON~~
+- ~~[DESAFIO] Corrigir os Testes de Integração do Controller de Person com XML~~
 - [SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com XML
-- [DESAFIO] Corrigir os Testes de Integração do Controller de Person com YAML
+- ~~[DESAFIO] Corrigir os Testes de Integração do Controller de Person com YAML~~
 - [SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com YAML
 - ~~[DESAFIO] Corrigir os Testes de Integração de Books com JSON, XML e YML~~
 

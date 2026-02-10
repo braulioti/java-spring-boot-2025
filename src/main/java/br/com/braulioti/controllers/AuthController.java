@@ -33,7 +33,7 @@ public class AuthController implements br.com.braulioti.controllers.docs.AuthCon
         if (token == null) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Invalid client request");
         }
-        return ResponseEntity.ok().body(token);
+        return token;
     }
 
     private boolean parametersAreInvalid(String username, String refreshToken) {
@@ -54,7 +54,7 @@ public class AuthController implements br.com.braulioti.controllers.docs.AuthCon
         if (token == null) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Invalid client request");
         }
-        return ResponseEntity.ok().body(token);
+        return token;
     }
 
     @PostMapping(value = "/createUser",
