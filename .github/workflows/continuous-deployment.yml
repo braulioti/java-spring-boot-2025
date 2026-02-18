@@ -11,6 +11,7 @@ jobs:
 
     env:
       TESTCONTAINERS_RYUK_DISABLED: true
+      DOCKER_HOST: unix:///var/run/docker.sock
 
     steps:
     - uses: actions/checkout@v4
@@ -27,6 +28,9 @@ jobs:
         distribution: temurin
         java-version: 21
         cache: maven
+
+    - name: Give permission to Docker socket
+      run: sudo chmod 666 /var/run/docker.sock
 
     - name: Build Application .jar
       working-directory: ./
