@@ -23,6 +23,7 @@
 		<jasperreports.version>7.0.1</jasperreports.version>
 		<zxing.version>3.5.3</zxing.version>
 		<java-jwt.version>4.4.0</java-jwt.version>
+		<docker-java.version>3.3.6</docker-java.version>
 	</properties>
 
 	<dependencies>
@@ -136,6 +137,13 @@
 			<artifactId>mysql</artifactId>
 			<version>${testcontainers.version}</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.docker-java</groupId>
+			<artifactId>docker-java-bom</artifactId>
+			<version>${docker-java.version}</version>
+			<type>pom</type>
+			<scope>import</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
