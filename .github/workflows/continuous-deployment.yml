@@ -28,6 +28,7 @@ jobs:
       working-directory: ./
       run: mvn clean package
       env:
+        DOCKER_API_VERSION: 1.44
         TESTCONTAINERS_RYUK_DISABLED: true
         TESTCONTAINERS_HOST_OVERRIDE: localhost
         DOCKER_HOST: unix:///var/run/docker.sock
