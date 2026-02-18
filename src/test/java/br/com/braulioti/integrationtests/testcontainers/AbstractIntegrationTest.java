@@ -1,26 +1,26 @@
 package br.com.braulioti.integrationtests.testcontainers;
 
-import org.springframework.context.ApplicationContextInitializer;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.core.env.ConfigurableEnvironment;
-import org.springframework.core.env.MapPropertySource;
-import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.DynamicPropertyRegistry;
+import org.springframework.test.context.DynamicPropertySource;
+import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.lifecycle.Startables;
 
-import java.util.Map;
 import java.util.stream.Stream;
 
-@ContextConfiguration(initializers = AbstractIntegrationTest.Initializer.class)
-public class AbstractIntegrationTest {
+@SpringJUnitConfig
+public abstract class AbstractIntegrationTest {
 
-    static class Initializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
+    private static final boolean IS_CI = System.getenv("GITHUB_ACTIONS") != null;
 
-        static MySQLContainer<?> mysql = new MySQLContainer<>("mysql:8.0.36")
-                .withReuse(true)
-                .withEnv("TESTCONTAINERS_RYUK_DISABLED", "true");
+    // Só criar Testcontainer se NÃO for CI
+    static MySQLContainer<?> mysql = IS_CI ? null :
+            new MySQLContainer<>("mysql:8.0.36")
+                    .withReuse(true)
+                    .withEnv("TESTCONTAINERS_RYUK_DISABLED", "true");
 
-        private static void startContainers() {
+    static {
+        if (!IS_CI) {
             try {
                 Startables.deepStart(Stream.of(mysql)).join();
             } catch (Exception e) {
@@ -28,25 +28,20 @@ public class AbstractIntegrationTest {
                 e.printStackTrace();
             }
         }
+    }
 
-        private Map<String, String> createConnectionConfiguration() {
-            return Map.of(
-                    "spring.datasource.url", mysql.getJdbcUrl(),
-                    "spring.datasource.username", mysql.getUsername(),
-                    "spring.datasource.password", mysql.getPassword()
-            );
-        }
-
-        @Override
-        public void initialize(ConfigurableApplicationContext applicationContext) {
-            startContainers();
-
-            ConfigurableEnvironment environment = applicationContext.getEnvironment();
-            MapPropertySource testcontainers = new MapPropertySource(
-                    "testcontainers",
-                    (Map) createConnectionConfiguration()
-            );
-            environment.getPropertySources().addFirst(testcontainers);
+    @DynamicPropertySource
+    static void configureProperties(DynamicPropertyRegistry registry) {
+        if (IS_CI) {
+            // MySQL do GitHub Actions
+            registry.add("spring.datasource.url", () -> System.getenv("SPRING_DATASOURCE_URL"));
+            registry.add("spring.datasource.username", () -> System.getenv("SPRING_DATASOURCE_USERNAME"));
+            registry.add("spring.datasource.password", () -> System.getenv("SPRING_DATASOURCE_PASSWORD"));
+        } else {
+            // Testcontainers local
+            registry.add("spring.datasource.url", mysql::getJdbcUrl);
+            registry.add("spring.datasource.username", mysql::getUsername);
+            registry.add("spring.datasource.password", mysql::getPassword);
         }
     }
 }
