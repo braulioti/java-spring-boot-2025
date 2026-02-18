@@ -345,8 +345,8 @@
 - ~~Testando a nossa API RESTful com o Postman~~
 - ~~Testando a nossa API RESTful com os Testes de Integração~~
 - ~~Enviando as Docker Images para o DockerHub~~
-- Entendendo o que é Continuous Integration e Continuous Delivery
-- Configurando o Github Actions para Acessar o Docker Hub
+- ~~Entendendo o que é Continuous Integration e Continuous Delivery~~
+- ~~Configurando o Github Actions para Acessar o Docker Hub~~
 - Logando no Docker Hub e Instalando o Java com Github Actions
 - Finalizando o Script de Continuous Integration e Delivery com Github Actions
 - Adicionando o Portainer à nossa Stack do Docker Compose

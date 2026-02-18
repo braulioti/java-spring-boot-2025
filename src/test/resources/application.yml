@@ -28,7 +28,7 @@ spring:
       max-file-size: 200MB
       max-request-size: 215MB
 file:
-  upload-dir: E:/projetos/pessoal/java-spring-boot-2025/uploads
+  upload-dir: /home/runner/work/java-spring-boot-2025/uploads
 security:
   jwt:
     token:
