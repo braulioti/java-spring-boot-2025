@@ -24,6 +24,12 @@ jobs:
         docker version
         docker info
 
+    - name: Fix Docker permissions
+      run: |
+        sudo groupadd docker || true
+        sudo usermod -aG docker $USER
+        sudo chmod 666 /var/run/docker.sock        
+
     - name: Build Application .jar
       working-directory: ./
       run: mvn clean package
