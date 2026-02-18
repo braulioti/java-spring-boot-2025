@@ -12,7 +12,6 @@ jobs:
     services:
       docker:
         image: docker:24-dind
-        privileged: true
         options: >-
           --health-cmd="docker info"
           --health-interval=10s
