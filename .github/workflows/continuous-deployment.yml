@@ -33,6 +33,8 @@ jobs:
     - name: Build Application .jar
       working-directory: ./
       run: mvn clean package
+      env:
+        TESTCONTAINERS_RYUK_DISABLED: true
 
     - name: Docker Compose Build
       working-directory: ./
