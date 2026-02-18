@@ -13,11 +13,20 @@ import java.util.stream.Stream;
 
 @ContextConfiguration(initializers = AbstractIntegrationTest.Initializer.class)
 public class AbstractIntegrationTest {
+
     static class Initializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
-        static MySQLContainer<?> mysql = new MySQLContainer<>("mysql:8.0.36");
+
+        static MySQLContainer<?> mysql = new MySQLContainer<>("mysql:8.0.36")
+                .withReuse(true)
+                .withEnv("TESTCONTAINERS_RYUK_DISABLED", "true");
 
         private static void startContainers() {
-            Startables.deepStart(Stream.of(mysql)).join();
+            try {
+                Startables.deepStart(Stream.of(mysql)).join();
+            } catch (Exception e) {
+                System.err.println("⚠️ Não foi possível iniciar o MySQLContainer: " + e.getMessage());
+                e.printStackTrace();
+            }
         }
 
         private Map<String, String> createConnectionConfiguration() {
@@ -31,11 +40,13 @@ public class AbstractIntegrationTest {
         @Override
         public void initialize(ConfigurableApplicationContext applicationContext) {
             startContainers();
+
             ConfigurableEnvironment environment = applicationContext.getEnvironment();
-            MapPropertySource testcontainers = new MapPropertySource("testcontainers",
-                    (Map) createConnectionConfiguration());
+            MapPropertySource testcontainers = new MapPropertySource(
+                    "testcontainers",
+                    (Map) createConnectionConfiguration()
+            );
             environment.getPropertySources().addFirst(testcontainers);
         }
-
     }
 }
