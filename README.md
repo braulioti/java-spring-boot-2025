@@ -319,9 +319,9 @@
 - ~~[DESAFIO] Corrigir os Testes de Integração do Controller de Person com JSON~~
 - ~~[SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com JSON~~
 - ~~[DESAFIO] Corrigir os Testes de Integração do Controller de Person com XML~~
-- [SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com XML
+- ~~[SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com XML~~
 - ~~[DESAFIO] Corrigir os Testes de Integração do Controller de Person com YAML~~
-- [SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com YAML
+- ~~[SOLUÇÃO] Corrigir os Testes de Integração do Controller de Person com YAML~~
 - ~~[DESAFIO] Corrigir os Testes de Integração de Books com JSON, XML e YML~~
 
 ### Seção 27: Introdução à Orquestração de Containers com Docker Compose
@@ -337,16 +337,14 @@
 - ~~Status de Contêiners com Docker Compose~~
 
 ### Seção 28: Dockerizando a Aplicação
-- Apresentação da Seção - dockerizando a nossa API RESTful
-- Criando o Dockerfile e Integrando nossa API RESTful ao Docker Compose
-- Construindo o .jar da nossa API RESTful via Terminal
-- Executando a nossa Stack com Docker e Docker Compose via Terminal
-- Construindo o .jar da nossa API RESTful via IntelliJ
-- Testando a nossa API RESTful com o Postman
-- Executando a nossa Stack com Docker e Docker Compose via IntelliJ
-- Testando a nossa API RESTful com o Postman
-- Testando a nossa API RESTful com os Testes de Integração
-- Enviando as Docker Images para o DockerHub
+- ~~Apresentação da Seção - dockerizando a nossa API RESTful~~
+- ~~Criando o Dockerfile e Integrando nossa API RESTful ao Docker Compose~~
+- ~~Construindo o .jar da nossa API RESTful via Terminal~~
+- ~~Executando a nossa Stack com Docker e Docker Compose via Terminal~~
+- ~~Construindo o .jar da nossa API RESTful via IntelliJ~~
+- ~~Testando a nossa API RESTful com o Postman~~
+- ~~Testando a nossa API RESTful com os Testes de Integração~~
+- ~~Enviando as Docker Images para o DockerHub~~
 - Entendendo o que é Continuous Integration e Continuous Delivery
 - Configurando o Github Actions para Acessar o Docker Hub
 - Logando no Docker Hub e Instalando o Java com Github Actions

@@ -41,7 +41,7 @@ email:
   subject: "Default Subject"
   message: "Default Message"
 server:
-  port: 9000
+  port: 80
   tomcat:
     use-native: false
 logging:

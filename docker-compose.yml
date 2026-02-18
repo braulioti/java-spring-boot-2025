@@ -1,0 +1,38 @@
+services:
+  db:
+    image: mysql:9.1.0
+    command: mysqld --default_authentication_plugin=mysql_native_password
+    restart: always
+    environment:
+      TZ: America/Sao_Paulo
+      MYSQL_ROOT_PASSWORD: admin123
+      MYSQL_ROOT: docker
+      MYSQL_PASSWORD: admin123
+      MYSQL_DATABASE: java_spring_boot_2025
+    ports:
+      - "3308:3306"
+    expose:
+      - 3306
+    networks:
+      - brauio-network
+  java-spring-boot-2025:
+    image: braulioti/java-spring-boot-2025
+    restart: always
+    build: ./java-spring-boot-2025
+    working_dir: /java-spring-boot-2025
+    environment:
+      TZ: America/Sao_Paulo
+      SPRING.DATASOURCE.URL: jdbc:mysql://db:3306/java_spring_boot_2025?useTimezone=true&serverTimezone=UTC
+      SPRING.DATASOURCE.USERNAME: root
+      SPRING.DATASOURCE.PASSWORD: admin123
+    command: mvn spring-boot:run
+    ports:
+      - 9090:9000
+    depends_on:
+      - db
+    networks:
+      brauio-network:
+
+networks:
+  brauio-network:
+    driver: bridge
