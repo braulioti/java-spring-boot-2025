@@ -25,6 +25,11 @@ jobs:
         java-version: 21
         cache: maven
 
+    - name: Verify Docker
+      run: |
+        docker version
+        docker info
+
     - name: Build Application .jar
       working-directory: ./
       run: mvn clean package
