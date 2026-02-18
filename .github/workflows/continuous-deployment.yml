@@ -11,12 +11,12 @@ jobs:
 
     services:
       mysql:
-        image: mysql:8.0
+        image: mysql:8.0.36
         env:
           MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: test
-          MYSQL_USER: user
-          MYSQL_PASSWORD: password
+          MYSQL_DATABASE: testdb
+          MYSQL_USER: test
+          MYSQL_PASSWORD: test
         ports:
           - 3306:3306
         options: >-
@@ -35,25 +35,30 @@ jobs:
         java-version: 21
         cache: maven
 
+    - name: Wait for MySQL
+      run: |
+        echo "Waiting for MySQL to be healthy..."
+        for i in {1..30}; do
+          if mysqladmin ping -h 127.0.0.1 -u test -ptest &>/dev/null; then
+            echo "MySQL is up!"
+            break
+          fi
+          echo "Waiting 2s..."
+          sleep 2
+        done
+
     - name: Verify Docker
       run: |
         docker version
-        docker info
-
-    - name: Fix Docker permissions
-      run: |
-        sudo systemctl start docker
-        sudo chmod 666 /var/run/docker.sock
-        docker info     
+        docker info   
 
     - name: Build Application .jar
       working-directory: ./
       run: mvn clean package
       env:
-        DOCKER_API_VERSION: 1.44
-        TESTCONTAINERS_RYUK_DISABLED: true
-        TESTCONTAINERS_HOST_OVERRIDE: localhost
-        DOCKER_HOST: unix:///var/run/docker.sock
+        SPRING_DATASOURCE_URL: jdbc:mysql://127.0.0.1:3306/testdb
+        SPRING_DATASOURCE_USERNAME: test
+        SPRING_DATASOURCE_PASSWORD: test
 
     - name: Login to Docker Hub
       uses: docker/login-action@v3
