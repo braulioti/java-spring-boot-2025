@@ -354,20 +354,20 @@
 - ~~Executando a Stack a partir das Docker Images do Docker Hub~~
 
 ### Seção 29: Implantando nossa API RESTful na Amazon AWS
-- Apresentação da Seção - Implantando nossa API RESTful na Amazon AWS
+- ~~Apresentação da Seção - Implantando nossa API RESTful na Amazon AWS~~
 - ~~O nível gratuito da Amazon AWS~~
 - ~~Criação de Uma Conta na Amazon AWS~~
-- Criação do Banco de Dados MySQL RDS na Amazon AWS
-- Integrando a Aplicação ao Banco MySQL RDS na Amazon AWS
-- Criação de um usuário IAM p. Gerenciar os nossos Serviços Amazon ECR e ECS
-- Criação de um Repositório Amazon AWS ECR para Armazenar nossa Docker Image
-- Instalando o Amazon AWS CLI
-- Reconstruindo as Docker Images com o Docker Compose
-- Enviando Docker Imagaes para o Amazon AWS ECR
-- Criação de um Cluster Amazon AWS ECS
-- Criando uma Taks Definition na Amazon AWS
-- Criando o Serviço na Amazon AWS
-- Testando a nossa Aplicação Implantada na Amazon AWS ECS
+- ~~Criação do Banco de Dados MySQL RDS na Amazon AWS~~
+- ~~Integrando a Aplicação ao Banco MySQL RDS na Amazon AWS~~
+- ~~Criação de um usuário IAM p. Gerenciar os nossos Serviços Amazon ECR e ECS~~
+- ~~Criação de um Repositório Amazon AWS ECR para Armazenar nossa Docker Image~~
+- ~~Instalando o Amazon AWS CLI~~
+- ~~Reconstruindo as Docker Images com o Docker Compose~~
+- ~~Enviando Docker Imagaes para o Amazon AWS ECR~~
+- ~~Criação de um Cluster Amazon AWS ECS~~
+- ~~Criando uma Taks Definition na Amazon AWS~~
+- ~~Criando o Serviço na Amazon AWS~~
+- ~~Testando a nossa Aplicação Implantada na Amazon AWS ECS~~
 
 ### Seção 30: Deploy Contínuo na Amazon AWS com Github Actions
 - Apresentação da Seção - Integração Contínua na Amazon AWS com Github Actions

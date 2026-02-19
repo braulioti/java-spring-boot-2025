@@ -3,7 +3,7 @@ spring:
     name: java-spring-boot-2025
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/java_spring_boot_2025?useTimezone=true&serverTimezone=UTC
+    url: ${JDBC_URL}
     username: root
     password:
   jpa:
