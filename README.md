@@ -370,15 +370,15 @@
 - ~~Testando a nossa Aplicação Implantada na Amazon AWS ECS~~
 
 ### Seção 30: Deploy Contínuo na Amazon AWS com Github Actions
-- Apresentação da Seção - Integração Contínua na Amazon AWS com Github Actions
-- Entendendo a Integração, Entrega e Inplantação Contínuas
-- Criando as novas Variáveisde Ambiente no Github Actions
-- Configurando o Github Actions para Fazer o Push Automático da Docker Image
-- Entendendo como podemos Trabalhar com o Arquivo de Task Definition
-- Configurando o Github Actions para Fazer o Deploy Automático
-- Criando uma Badge de Status do Build no nosso Repositório no Github
-- Executando o Deploy Automático com Github Actions
-- Deletando os Serviços da Amazon AWS Utilizados no Curso
+- ~~Apresentação da Seção - Integração Contínua na Amazon AWS com Github Actions~~
+- ~~Entendendo a Integração, Entrega e Inplantação Contínuas~~
+- ~~Criando as novas Variáveis de Ambiente no Github Actions~~
+- ~~Configurando o Github Actions para Fazer o Push Automático da Docker Image~~
+- ~~Entendendo como podemos Trabalhar com o Arquivo de Task Definition~~
+- ~~Configurando o Github Actions para Fazer o Deploy Automático~~
+- ~~Criando uma Badge de Status do Build no nosso Repositório no Github~~
+- ~~Executando o Deploy Automático com Github Actions~~
+- ~~Deletando os Serviços da Amazon AWS Utilizados no Curso~~
 
 ### Seção 31: Implantando nossa API RESTful na Google Cloud Platform (GCP)
 - ~~Apresentação da Seção - Implantação na Google Cloud Platform~~
